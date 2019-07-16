@@ -4,11 +4,12 @@ import Home from "./views/Home.vue";
 
 import AboutMe from './views/AboutMe';
 import ContactMe from './views/ContactMe';
-import MyWork from './views/MyWork';
+import Portfolio from './views/Portfolio';
 
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: "/",
@@ -26,9 +27,9 @@ export default new Router({
           component: ContactMe
         },
         {
-          path: '/my-work',
-          name: 'my-work',
-          component: MyWork
+          path: '/portfolio',
+          name: 'portfolio',
+          component: Portfolio
         }
       ]
     }
