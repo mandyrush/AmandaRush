@@ -1,18 +1,7 @@
 <template>
-    <span>
-        Contact Me
-    </span>
+    <div class="description">
+        <span>
+            Contact Me
+        </span>
+    </div>
 </template>
-
-<script>
-    export default {
-
-    }
-</script>
-
-<style lang="scss" scoped>
-    span {
-        font-size: 1.25rem;
-        color: #333333;
-    }
-</style>

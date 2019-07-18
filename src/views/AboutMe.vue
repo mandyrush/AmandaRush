@@ -1,18 +1,18 @@
 <template>
-    <span>
-        About Me
-    </span>
+    <div class="description">
+        <span>
+            About Me
+        </span>
+    </div>
 </template>
 
-<script>
-    export default {
-
-    }
-</script>
-
-<style lang="scss" scoped>
-    span {
-        font-size: 1.25rem;
-        color: #333333;
+<style lang="scss">
+    .description {
+        padding: 1rem;
+        height: 100%;
+        span {
+            font-size: 1.25rem;
+            color: #333333;
+        }
     }
 </style>
