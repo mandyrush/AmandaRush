@@ -41,7 +41,7 @@
                 align-items: center;
                 justify-content: center;
                 color: white;
-                font-size: 1.5rem;
+                font-size: 1.25rem;
                 height: 100%;
                 &:hover {
                     background-color: #cccccc;

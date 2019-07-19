@@ -131,16 +131,15 @@
     }
     .bio-content {
         display: grid;
-        grid-template-columns: 25% 75%;
-        height: 70%;
-        margin: 3rem 3rem 3rem 0;
+        grid-template-columns: 20% 80%;
+        margin: 2rem 2rem 2rem 0;
+        height: 90%;
         padding: 1rem;
         z-index: 5;
     }
     .description {
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
         height: 100%;
-        overflow: scroll;
     }
 
     @media (max-width: 800px) {
