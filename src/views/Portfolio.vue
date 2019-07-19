@@ -1,7 +1,7 @@
 <template>
     <div class="description">
         <span>
-            Portfolio
+            <strong class="text-highlight">Portfolio</strong>
         </span>
     </div>
 </template>

@@ -41,20 +41,37 @@
                 align-items: center;
                 justify-content: center;
                 color: white;
+                font-size: 1.5rem;
                 height: 100%;
                 &:hover {
-                    background-color: orange;
+                    background-color: #cccccc;
+                    color: white;
                 }
             }
         }
         .about-me {
-            background-color: rebeccapurple;
+            background-color: #660066;
+            a:hover {
+                background-color: #990099;
+            }
         }
         .portfolio {
-            background-color: #9966cc;
+            background-color: #0099ff;
+            a:hover {
+                background-color: #33adff;
+            }
         }
         .contact-me {
-            background-color: #be9fdf;
+            background-color: #ff9900;
+            a:hover {
+                background-color: #ffad33;
+            }
+        }
+    }
+
+    @media(max-width: 800px) {
+        .menu-list li a {
+            font-size: 1rem;
         }
     }
 </style>
