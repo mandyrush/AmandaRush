@@ -17,13 +17,13 @@
 <style lang="scss" scoped>
     .footer-links {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        padding: 0 30%;
         width: 100%;
         span {
-            padding-right: 2rem;
-            font-size: 2rem;
+            font-size: 2.5rem;
             a {
-                color: #333333;
+                color: #433D3F;
             }
         }
     }

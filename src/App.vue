@@ -1,30 +1,38 @@
 <template>
-  <div id="app">
+  <div
+      id="app"
+      :class="{'layout1' : title === 'About', 'layout2' : title === 'Portfolio', 'layout3' : title === 'Skills' }"
+  >
 
-      <div class="portfolio-img">
-          <div>
+      <section class="header-section columns">
+          <div class="portfolio-img column is-4-desktop is-12-mobile">
               <img src="/amandaPic.jpg" alt="Image of Amanda">
           </div>
-      </div>
 
-      <div
-          class="page-content"
-          :class="{'layout1' : title === 'About', 'layout2' : title === 'Portfolio', 'layout3' : title === 'Contact' }"
-      >
-          <div class="header">
-            <div class="page-title" v-text="title"></div>
-            <div class="name">Amanda Rush</div>
-          </div>
+          <div class="page-content column is-8-desktop is-12-mobile">
+              <div class="header">
+                  <div class="page-title" v-text="title"></div>
+                  <div class="name">Amanda Rush</div>
+              </div>
 
-          <div class="bio">
-              <div class="bio-content">
-                <Menu @changeTitle="updateTitle($event)"/>
-                <router-view/>
+              <div class="intro-text">
+                  <p>
+                      <strong class="text-highlight">Greetings!</strong> My name is Amanda. I am a front end web developer with a passion for
+                      technology, learning and creating. I have experience with PHP, Laravel and MYSQL
+                      with a main focus on Javascript, Vue.js and Vuex.
+                  </p>
               </div>
 
               <FooterLinks/>
           </div>
-      </div>
+      </section>
+
+      <section class="content-section">
+          <div class="bio">
+              <Menu @changeTitle="updateTitle($event)"/>
+              <router-view/>
+          </div>
+      </section>
 
   </div>
 </template>
@@ -55,57 +63,62 @@
     #app {
         font-family: "Avenir", Helvetica, Arial, sans-serif;
         font-size: 1.25rem;
-        color: #333333;
-        height: 100vh;
-        display: flex;
+        color: #433D3F;
+        margin: 3rem 5rem 5rem 5rem;
     }
     .portfolio-img {
-        flex-basis: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 3rem;
-        div {
-            width: 75%;
-        }
+        margin-top: 5rem;
+        width: 100%;
         img {
+            display: block;
+            margin: 0 auto;
             max-height: 100%;
             max-width: 100%;
-            box-shadow: 5px 5px 8px #888888;
+            box-shadow: 5px 5px 8px #9e9498;
         }
     }
+
+    .header-section {
+        padding: 0 5rem;
+    }
+
     .page-content {
-        flex-basis: 60%;
-        height: 100%;
-        display: grid;
-        grid-template-rows: 30% 60%;
+        padding-left: 3rem;
         .header {
             position: relative;
-            height: 100%;
+            height: 40%;
+            width: 100%;
+        }
+        .intro-text {
+            display: flex;
+            align-items: center;
+            height: 50%;
+            padding: 2rem 0;
+            font-size: 1.5rem;
         }
     }
     .layout1 {
-        .bio-content {
-            border: 2px solid #660066;
+        .bio {
+            border: 5px solid #AC3B61;
         }
         .name, .text-highlight, .footer-links a:hover {
-            color: #660066;
+            color: #AC3B61;
         }
     }
     .layout2 {
-        .bio-content {
-            border: 2px solid #0099ff;
+        .bio {
+            border: 5px solid #9e9498;
         }
         .name, .text-highlight, .footer-links a:hover {
-            color: #0099ff;
+            color: #9e9498;
         }
     }
     .layout3 {
-        .bio-content {
-            border: 2px solid #ff9900;
+        .bio {
+            border: 5px solid #123C69;
         }
         .name, .text-highlight, .footer-links a:hover {
-            color: #ff9900;
+            color: #123C69;
         }
     }
     .page-title, .name {
@@ -116,56 +129,49 @@
     }
     .page-title {
         font-size: 13rem;
-        color: #f2f2f2;
+        color: #f3f2f2;
         line-height: 11rem;
     }
     .name {
         font-size: 3rem;
     }
-    .bio {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-    .bio-content {
-        display: grid;
-        grid-template-columns: 20% 80%;
-        margin: 2rem 2rem 2rem 0;
-        height: 90%;
-        padding: 1rem;
-        z-index: 5;
-    }
-    .description {
-        padding: 0 1rem 1rem 1rem;
-        height: 100%;
+
+    .content-section {
+        margin: 2rem 0;
     }
 
-    @media (max-width: 800px) {
+    .bio {
+        padding: 5rem;
+    }
+
+    @media (max-width: 768px) {
         #app {
-            flex-wrap: wrap;
-            padding: 1rem;
+            margin: 2rem;
         }
         .portfolio-img {
-            flex-basis: 100%;
+            margin-top: 0;
+            img {
+                width: 75%;
+            }
+        }
+        .header-section {
             padding: 0;
-            justify-content: center;
         }
         .page-content {
-            flex-basis: 100%;
-            grid-template-rows: 25% 75%;
-            margin-top: 3rem;
-        }
-        .page-title {
-            font-size: 7rem;
-            line-height: 12rem;
+            text-align: center;
+            padding-left: 0;
+            .page-title, .name {
+                position: static;
+                display: flex;
+                justify-content: center;
+            }
+            .page-title {
+                font-size: 7rem;
+                line-height: 8rem;
+            }
         }
         .bio {
-            justify-content: flex-start;
-        }
-        .bio-content {
-            margin: 3rem 0;
+            padding: 1rem;
         }
     }
 </style>

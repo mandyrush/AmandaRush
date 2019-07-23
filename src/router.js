@@ -2,7 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import AboutMe from './views/AboutMe';
-import ContactMe from './views/ContactMe';
+import Skills from './views/Skills';
 import Portfolio from './views/Portfolio';
 
 Vue.use(Router);
@@ -16,9 +16,9 @@ export default new Router({
           component: AboutMe
         },
         {
-          path: 'contact-me',
-          name: 'contact-me',
-          component: ContactMe
+          path: 'skills',
+          name: 'skills',
+          component: Skills
         },
         {
           path: 'portfolio',

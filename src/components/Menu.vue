@@ -5,12 +5,12 @@
                 <router-link :to="{ name: 'about-me' }">About Me</router-link>
             </li>
 
-            <li class="portfolio" @click="changeTitle('Portfolio')">
-                <router-link :to="{ name: 'portfolio' }">Portfolio</router-link>
+            <li class="contact-me" @click="changeTitle('Skills')">
+                <router-link :to="{ name: 'skills' }">Skills</router-link>
             </li>
 
-            <li class="contact-me" @click="changeTitle('Contact')">
-                <router-link :to="{ name: 'contact-me' }">Contact Me</router-link>
+            <li class="portfolio" @click="changeTitle('Portfolio')">
+                <router-link :to="{ name: 'portfolio' }">Portfolio</router-link>
             </li>
         </ul>
     </aside>
@@ -27,11 +27,13 @@
 </script>
 
 <style lang="scss" scoped>
+    .menu {
+        margin-bottom: 3rem;
+    }
     .menu-list {
         height: 100%;
         margin: 0;
         display: flex;
-        flex-direction: column;
         li {
             list-style: none;
             flex-grow: 1;
@@ -50,26 +52,26 @@
             }
         }
         .about-me {
-            background-color: #660066;
+            background-color: #AC3B61;
             a:hover {
-                background-color: #990099;
-            }
-        }
-        .portfolio {
-            background-color: #0099ff;
-            a:hover {
-                background-color: #33adff;
+                background-color: #be416b;
             }
         }
         .contact-me {
-            background-color: #ff9900;
+            background-color: #123C69;
             a:hover {
-                background-color: #ffad33;
+                background-color: #154b84;
+            }
+        }
+        .portfolio {
+            background-color: #9e9498;
+            a:hover {
+                background-color: #aaa1a5;
             }
         }
     }
 
-    @media(max-width: 800px) {
+    @media(max-width: 768px) {
         .menu-list li a {
             font-size: 1rem;
         }
