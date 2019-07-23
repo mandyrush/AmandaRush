@@ -51,7 +51,7 @@
                 </ul>
             </div>
 
-            <div class="column is-4 even">
+            <div class="column is-4">
                 <h4>Database</h4>
                 <ul>
                     <li><p class="familiar">MYSQL</p></li>
@@ -59,7 +59,7 @@
                 </ul>
             </div>
 
-            <div class="column is-4 even">
+            <div class="column is-4">
                 <h4>Methodologies</h4>
                 <ul>
                     <li><p class="familiar">RWD</p></li>
@@ -83,6 +83,8 @@
 </template>
 
 <style lang="scss" scoped>
+    @import '@/variables.scss';
+
     .key {
         ul {
             display: flex;
@@ -94,7 +96,7 @@
                 padding: 0 .5rem;
                 width: 12%;
                 font-size: 1rem;
-                color: white;
+                color: $white;
             }
         }
     }
@@ -110,9 +112,9 @@
             margin-left: 0;
             li {
                 list-style: none;
-                border: 1px solid #9e9498;
-                background-color: #f2f2f2;
-                color: white;
+                border: 1px solid $primary-three;
+                background-color: $lt-gray;
+                color: $white;
             }
         }
         .content li + li {
@@ -126,23 +128,23 @@
 
     .learning {
         width: 25%;
-        background-image: linear-gradient(to right, #66a4e5 , #d3e5f8);
+        background-image: linear-gradient(to right, $primary-two-gradient6 , $primary-two-gradient7);
     }
     .occasional-use {
         width: 40%;
-        background-image: linear-gradient(to right, #257cda , #92beed);
+        background-image: linear-gradient(to right, $primary-two-gradient4 , $primary-two-gradient5);
     }
     .familiar {
         width: 60%;
-        background-image: linear-gradient(to right, #1a5799 , #5197e1);
+        background-image: linear-gradient(to right, $primary-two-gradient2 , $primary-two-gradient3);
 
     }
     .regular-use {
         width: 80%;
-        background-image: linear-gradient(to right, #123c69 , #2170c4);
+        background-image: linear-gradient(to right, $primary-two , $primary-two-gradient1);
     }
     .professional {
-        background-color: #123c69;
+        background-color: $primary-two;
     }
 
     @media (max-width: 768px) {

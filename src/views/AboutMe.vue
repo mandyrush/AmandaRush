@@ -7,7 +7,7 @@
         <p>
         I am a self proclaimed writer, traveler, artist, herder of cats and of course a code junkie. I spend my days
         sipping coffee, writing code and bending to the will of my three furry felines. In my spare time I love to go
-        on adventures with my husband and fellow developer Des, try out a new climbing wall or go for a swim.
+        on adventures with my husband and fellow developer Des, try out a new climbing wall or grab a drink with friends.
         </p>
 
         <p>
@@ -39,11 +39,9 @@
     </div>
 </template>
 
+
 <style lang="scss" scoped>
-    .description {
-        overflow: scroll;
-        p:not(:last-child) {
-            margin-bottom: 1.5rem;
-        }
+    .description p:not(:last-child) {
+        margin-bottom: 1.5rem;
     }
 </style>

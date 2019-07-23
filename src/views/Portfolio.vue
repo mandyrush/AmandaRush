@@ -5,7 +5,7 @@
             <a
                 href="http://catswander.com/"
                 target="_blank"
-                class="image-link image column is-7-desktop is-12-mobile"
+                class="image image-link column is-7-desktop is-12-mobile"
             >
                 <img src="/cats_wander.jpg" alt="catswander.com">
             </a>
@@ -25,11 +25,12 @@
             </div>
         </div>
 
+
         <div class="project columns">
             <a
                     href="http://bluebowfashion.com/"
                     target="_blank"
-                    class="image-link image column is-7-desktop is-12-mobile"
+                    class="image image-link column is-7-desktop is-12-mobile"
             >
                 <img src="/blue_bow.jpg" alt="bluebowfashion.com">
             </a>
@@ -48,9 +49,10 @@
             </div>
         </div>
 
+
         <div class="project columns">
             <span class="image column is-7-desktop is-12-mobile">
-                <img src="/express_labs.jpg" alt="express labs">
+                <img src="/express_labs.jpg" alt="express labs website in progress">
             </span>
 
             <div class="column is-5-desktop is-12-mobile">
@@ -71,6 +73,8 @@
 </template>
 
 <style lang="scss" scoped>
+    @import '@/variables.scss';
+
     .project {
         div {
             padding-left: 2rem;
@@ -87,12 +91,12 @@
     .project-title {
         margin-bottom: 1rem;
         display: block;
-        color: #2170c4;
+        color: $primary-two-gradient1;
         font-weight: bold;
     }
     .link {
         &:hover {
-            color: #123C69;
+            color: $primary-two;
         }
     }
     .image-link {
@@ -101,7 +105,7 @@
         }
     }
     img {
-        box-shadow: 3px 3px 10px #9e9498;
+        box-shadow: 3px 3px 10px $primary-three;
         display: block;
         height: auto;
         width: 100%;

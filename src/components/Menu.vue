@@ -27,6 +27,8 @@
 </script>
 
 <style lang="scss" scoped>
+    @import '@/variables.scss';
+
     .menu {
         margin-bottom: 3rem;
     }
@@ -42,31 +44,27 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: white;
+                color: $white;
                 font-size: 1.25rem;
                 height: 100%;
-                &:hover {
-                    background-color: #cccccc;
-                    color: white;
-                }
             }
         }
         .about-me {
-            background-color: #AC3B61;
+            background-color: $primary-one;
             a:hover {
-                background-color: #be416b;
+                background-color: $primary-one-hover;
             }
         }
         .contact-me {
-            background-color: #123C69;
+            background-color: $primary-two;
             a:hover {
-                background-color: #154b84;
+                background-color: $primary-two-hover;
             }
         }
         .portfolio {
-            background-color: #9e9498;
+            background-color: $primary-three;
             a:hover {
-                background-color: #aaa1a5;
+                background-color: $primary-three-hover;
             }
         }
     }

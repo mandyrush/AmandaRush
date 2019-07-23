@@ -9,17 +9,17 @@
               <img src="/amandaPic.jpg" alt="Image of Amanda">
           </div>
 
-          <div class="page-content column is-8-desktop is-12-mobile">
+          <div class="header-content column is-8-desktop is-12-mobile">
               <div class="header">
                   <div class="page-title" v-text="title"></div>
                   <div class="name">Amanda Rush</div>
               </div>
 
-              <div class="intro-text">
+              <div class="intro-text content is-italic">
                   <p>
-                      <strong class="text-highlight">Greetings!</strong> My name is Amanda. I am a front end web developer with a passion for
-                      technology, learning and creating. I have experience with PHP, Laravel and MYSQL
-                      with a main focus on Javascript, Vue.js and Vuex.
+                      <strong class="text-highlight">Greetings!</strong> My name is Amanda. I am a front end web
+                      developer with a passion for technology, learning and creating. I have experience with PHP,
+                      Laravel and MYSQL with a main focus on Javascript, Vue.js and Vuex.
                   </p>
               </div>
 
@@ -27,9 +27,11 @@
           </div>
       </section>
 
+
       <section class="content-section">
           <div class="bio">
               <Menu @changeTitle="updateTitle($event)"/>
+
               <router-view/>
           </div>
       </section>
@@ -60,10 +62,12 @@
 </script>
 
 <style lang="scss">
+    @import '@/variables.scss';
+
     #app {
         font-family: "Avenir", Helvetica, Arial, sans-serif;
         font-size: 1.25rem;
-        color: #433D3F;
+        color: $main-font-color;
         margin: 3rem 5rem 5rem 5rem;
     }
     .portfolio-img {
@@ -72,17 +76,13 @@
         img {
             display: block;
             margin: 0 auto;
-            max-height: 100%;
-            max-width: 100%;
-            box-shadow: 5px 5px 8px #9e9498;
+            box-shadow: 5px 5px 8px $primary-three;
         }
     }
-
     .header-section {
         padding: 0 5rem;
     }
-
-    .page-content {
+    .header-content {
         padding-left: 3rem;
         .header {
             position: relative;
@@ -99,26 +99,26 @@
     }
     .layout1 {
         .bio {
-            border: 5px solid #AC3B61;
+            border: 5px solid $primary-one;
         }
         .name, .text-highlight, .footer-links a:hover {
-            color: #AC3B61;
+            color: $primary-one;
         }
     }
     .layout2 {
         .bio {
-            border: 5px solid #9e9498;
+            border: 5px solid $primary-three;
         }
         .name, .text-highlight, .footer-links a:hover {
-            color: #9e9498;
+            color: $primary-three;
         }
     }
     .layout3 {
         .bio {
-            border: 5px solid #123C69;
+            border: 5px solid $primary-two;
         }
         .name, .text-highlight, .footer-links a:hover {
-            color: #123C69;
+            color: $primary-two;
         }
     }
     .page-title, .name {
@@ -129,7 +129,7 @@
     }
     .page-title {
         font-size: 13rem;
-        color: #f3f2f2;
+        color: $lt-gray;
         line-height: 11rem;
     }
     .name {
@@ -157,7 +157,7 @@
         .header-section {
             padding: 0;
         }
-        .page-content {
+        .header-content {
             text-align: center;
             padding-left: 0;
             .page-title, .name {
