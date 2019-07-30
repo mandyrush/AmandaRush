@@ -6,12 +6,13 @@
 
       <section class="header-section columns">
           <div class="portfolio-img column is-4-desktop is-12-mobile">
-              <img src="/amandaPic.jpg" alt="Image of Amanda">
+              <img src="../public/amandaPic.jpg" alt="Image of Amanda">
           </div>
 
           <div class="header-content column is-8-desktop is-12-mobile">
               <div class="header">
                   <div class="page-title" v-text="title"></div>
+
                   <div class="name">Amanda Rush</div>
               </div>
 
@@ -30,7 +31,7 @@
 
       <section class="content-section">
           <div class="bio">
-              <Menu @changeTitle="updateTitle($event)"/>
+              <Menu @changeTitle="updateTitle"/>
 
               <router-view/>
           </div>
@@ -40,8 +41,8 @@
 </template>
 
 <script>
-  import Menu from '@/./components/Menu';
-  import FooterLinks from '@/./components/FooterLinks';
+  import Menu from './components/Menu';
+  import FooterLinks from './components/FooterLinks';
 
   export default {
       components: {
@@ -62,7 +63,7 @@
 </script>
 
 <style lang="scss">
-    @import '@/variables.scss';
+    @import './assets/sass/main.scss';
 
     #app {
         font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -77,6 +78,7 @@
             display: block;
             margin: 0 auto;
             box-shadow: 5px 5px 8px $primary-three;
+            max-height: 100%;
         }
     }
     .header-section {
@@ -144,6 +146,22 @@
         padding: 5rem;
     }
 
+    @media (max-width: 1024px) {
+        .bio {
+            padding: 2.5rem;
+        }
+        .page-title {
+            font-size: 7rem;
+            line-height: 7rem;
+        }
+        .name {
+            font-size: 2.5rem;
+        }
+        .header-content .intro-text {
+            font-size: 1.25rem;
+        }
+    }
+
     @media (max-width: 768px) {
         #app {
             margin: 2rem;
@@ -172,6 +190,11 @@
         }
         .bio {
             padding: 1rem;
+        }
+    }
+    @media (max-width: 600px) {
+        .header-content .page-title {
+            font-size: 4rem;
         }
     }
 </style>

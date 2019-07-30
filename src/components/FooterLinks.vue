@@ -21,7 +21,7 @@
 </template>
 
 <style lang="scss" scoped>
-    @import '@/variables.scss';
+    @import '../assets/sass/main.scss';
 
     .footer-links {
         display: flex;
@@ -32,6 +32,15 @@
             font-size: 2.5rem;
             a {
                 color: $main-font-color;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .footer-links {
+            padding: 0 15%;
+            span {
+                font-size: 2rem;
             }
         }
     }

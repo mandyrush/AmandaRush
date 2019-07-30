@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div class="key">
+        <div class="key" v-if="!isMobile">
             <ul>
                 <li class="learning">Learning</li>
                 <li class="occasional-use">Occasional Use</li>
@@ -82,24 +82,18 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
-    @import '@/variables.scss';
-
-    .key {
-        ul {
-            display: flex;
-            justify-content: center;
-            margin: 3rem 0 0 0;
-            li {
-                margin-top: 0;
-                list-style: none;
-                padding: 0 .5rem;
-                width: 12%;
-                font-size: 1rem;
-                color: $white;
+<script>
+    export default {
+        computed: {
+            isMobile() {
+                return window.innerWidth <= 768;
             }
         }
     }
+</script>
+
+<style lang="scss" scoped>
+    @import '../assets/sass/main.scss';
 
     .skill-levels {
         .columns:not(:last-child) {
@@ -147,9 +141,19 @@
         background-color: $primary-two;
     }
 
-    @media (max-width: 768px) {
-        .key ul li {
-            width: 25%;
+    .key {
+        ul {
+            display: flex;
+            justify-content: center;
+            margin: 3rem 0 0 0;
+            li {
+                margin-top: 0;
+                list-style: none;
+                padding: 0 .5rem;
+                width: 12%;
+                font-size: 1rem;
+                color: $white;
+            }
         }
     }
 </style>

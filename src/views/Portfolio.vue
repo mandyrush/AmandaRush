@@ -1,38 +1,33 @@
 <template>
     <div class="description">
 
-        <div class="project columns">
-            <a
-                href="http://catswander.com/"
-                target="_blank"
-                class="image image-link column is-7-desktop is-12-mobile"
-            >
-                <img src="/cats_wander.jpg" alt="catswander.com">
-            </a>
+        <div class="project columns is-desktop">
+            <span class="image column is-7-desktop is-12-mobile">
+                <img src="../../public/express_labs.jpg" alt="express labs website in progress">
+            </span>
 
             <div class="column is-5-desktop is-12-mobile">
-                <a href="http://catswander.com/" target="_blank" class="project-title link">
-                    Cats Wander
-                </a>
+                <span class="project-title">
+                    Express Labs - (Currently in Production)
+                </span>
 
                 <p class="project-description">
-                    My husband and I were lucky enough to travel through Europe for a little over a year while he worked
-                    remotely and I learned as much as I could about PHP, Laravel, MYSQL and the beginnings of Javascript.
-                    When planning our trip we couldn't bear to part with our two furry friends so we decided to take them
-                    along. As you can imagine our adventures were not your typical travel experiences so I created this
-                    to document each step of the way. It was my very first project and there are plenty more stories to come...
+                    Currently I am working remotely for Fragment Labs on a redesign of expresslabs.com. The frontend that I am creating is a fully responsive
+                    SPA built with Laravel, Vue.js and Vuex that will integrate with a Laravel backend. It uses Axios to call the backend API
+                    and Bulma as the css framework. It includes a registration form and an account dashboard for authorized users. As
+                    this is currently in production the site is not available to view yet but if you would like to see more let me know!
                 </p>
             </div>
         </div>
 
 
-        <div class="project columns">
+        <div class="project columns is-desktop">
             <a
                     href="http://bluebowfashion.com/"
                     target="_blank"
                     class="image image-link column is-7-desktop is-12-mobile"
             >
-                <img src="/blue_bow.jpg" alt="bluebowfashion.com">
+                <img src="../../public/blue_bow.jpg" alt="bluebowfashion.com">
             </a>
 
             <div class="column is-5-desktop is-12-mobile">
@@ -50,30 +45,35 @@
         </div>
 
 
-        <div class="project columns">
-            <span class="image column is-7-desktop is-12-mobile">
-                <img src="/express_labs.jpg" alt="express labs website in progress">
-            </span>
+        <div class="project columns is-desktop">
+            <a
+                    href="http://catswander.com/"
+                    target="_blank"
+                    class="image image-link column is-7-desktop is-12-mobile"
+            >
+                <img src="../../public/cats_wander.jpg" alt="catswander.com">
+            </a>
 
             <div class="column is-5-desktop is-12-mobile">
-                <span class="project-title">
-                    Express Labs - (Currently in Production)
-                </span>
+                <a href="http://catswander.com/" target="_blank" class="project-title link">
+                    Cats Wander
+                </a>
 
                 <p class="project-description">
-                    Currently I am working remotely for Fragment Labs on a redesign of expresslabs.com. The frontend that I am creating is
-                    an SPA built with Laravel, Vue.js and Vuex that will integrate with a Laravel backend. It uses Axios to call the backend API
-                    and Bulma as the css framework. It includes a registration form and an account dashboard for authorized users. As
-                    this is currently in production the site is not available to view yet but if you would like to see more let me know!
+                    My husband and I were lucky enough to travel through Europe for a little over a year while he worked
+                    remotely and I learned as much as I could about PHP, Laravel, MYSQL and the beginnings of Javascript.
+                    When planning our trip we couldn't bear to part with our two furry friends so we decided to take them
+                    along. As you can imagine our adventures were not your typical travel experiences so I created this blog
+                    to document each step of the way. It was my very first project and there are plenty more stories to come...
                 </p>
             </div>
         </div>
-    </div>
 
+    </div>
 </template>
 
 <style lang="scss" scoped>
-    @import '@/variables.scss';
+    @import '../assets/sass/main.scss';
 
     .project {
         div {

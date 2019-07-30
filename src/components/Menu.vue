@@ -23,11 +23,11 @@
                 this.$emit('changeTitle', title);
             }
         }
-    };
+    }
 </script>
 
 <style lang="scss" scoped>
-    @import '@/variables.scss';
+    @import '../assets/sass/main.scss';
 
     .menu {
         margin-bottom: 3rem;

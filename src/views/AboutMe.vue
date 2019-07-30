@@ -32,9 +32,9 @@
         </p>
 
         <p>
-        My husband and I live in Billings, MT but we are open to the possibility of relocation. Please check out my
-        links above and feel free to send me a message if you would like to talk more about my work. I can also be
-        reached on Skype or by phone or email. I'd love to hear from you!
+<!--        My husband and I live in Billings, MT but we are open to the possibility of relocation. -->
+        Please check out my links above and feel free to send me a message if you would like to talk more about my work.
+        I can also be reached on Skype or by phone or email. I'd love to hear from you!
         </p>
     </div>
 </template>

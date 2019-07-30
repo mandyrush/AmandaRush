@@ -16,12 +16,12 @@ export default new Router({
           component: AboutMe
         },
         {
-          path: 'skills',
+          path: '/skills',
           name: 'skills',
           component: Skills
         },
         {
-          path: 'portfolio',
+          path: '/portfolio',
           name: 'portfolio',
           component: Portfolio
         }
