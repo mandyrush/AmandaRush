@@ -5,7 +5,7 @@
         </p>
 
         <p>
-        I am a self proclaimed writer, traveler, artist, herder of cats and of course a code junkie. I spend my days
+        I am a self proclaimed writer, traveler, artist, herder of cats and of course web developer. I spend my days
         sipping coffee, writing code and bending to the will of my three furry felines. In my spare time I love to go
         on adventures with my husband and fellow developer Des, try out a new climbing wall or grab a drink with friends.
         </p>
@@ -32,7 +32,6 @@
         </p>
 
         <p>
-<!--        My husband and I live in Billings, MT but we are open to the possibility of relocation. -->
         Please check out my links above and feel free to send me a message if you would like to talk more about my work.
         I can also be reached on Skype or by phone or email. I'd love to hear from you!
         </p>

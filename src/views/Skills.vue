@@ -62,10 +62,11 @@
             <div class="column is-4">
                 <h4>Methodologies</h4>
                 <ul>
+                    <li><p class="familiar">AJAX</p></li>
                     <li><p class="familiar">RWD</p></li>
                     <li><p class="occasional-use">MVC</p></li>
                     <li><p class="learning">RESTful</p></li>
-                    <li><p class="learning">AJAX</p></li>
+
                 </ul>
             </div>
         </div>
