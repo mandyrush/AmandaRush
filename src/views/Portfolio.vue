@@ -19,9 +19,9 @@
           SPA built with Laravel, Vue.js and Vuex that will integrate with a
           Laravel backend. It uses Axios to call the backend API and Bulma as
           the css framework. It includes a registration form and an account
-          dashboard for authorized users. As this is currently in production the
-          site is not available to view yet but if you would like to see more
-          let me know!
+          dashboard for authorized users. As this is currently in development
+          the site is not available to view yet but if you would like to see
+          more let me know!
         </p>
       </div>
     </div>
