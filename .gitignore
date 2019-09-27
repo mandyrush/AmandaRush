@@ -21,3 +21,5 @@ yarn-error.log*
 *.sw?
 
 vue.config.js
+firebase.json
+.firebaserc
