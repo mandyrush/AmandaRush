@@ -23,8 +23,9 @@
           <p>
             <strong class="text-highlight">Greetings!</strong> My name is
             Amanda. I am a front end web developer with a passion for
-            technology, learning and creating. I have experience with PHP,
-            Laravel and MYSQL with a main focus on Javascript, Vue.js and Vuex.
+            technology, learning and creating. My main focus is on Javascript,
+            VueJs, React, HTML5 and CSS3. I also have experience with PHP,
+            Laravel, MYSQL and Python.
           </p>
         </div>
 

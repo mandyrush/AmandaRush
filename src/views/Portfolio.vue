@@ -14,11 +14,11 @@
         </span>
 
         <p class="project-description">
-          Currently I am working remotely for Fragment Labs on a redesign of
-          expresslabs.com. The frontend that I am creating is a fully responsive
-          SPA built with Laravel, Vue.js and Vuex that will integrate with a
-          Laravel backend. It uses Axios to call the backend API and Bulma as
-          the css framework. It includes a registration form and an account
+          Until recently I worked remotely for Fragment Labs on a redesign of
+          expresslabs.com. The frontend that I created was a fully responsive
+          SPA built with Laravel, VueJs and Vuex that will integrate with a
+          Laravel backend. It used Axios to call the backend API and Bulma as
+          the css framework. It included a registration form and an account
           dashboard for authorized users. As this is currently in development
           the site is not available to view yet but if you would like to see
           more let me know!
@@ -48,7 +48,7 @@
           I created this project for my mom. She is an amazing and talented
           seamstress in her spare time and I wanted to give her a place to show
           off her work. It began as a Laravel project but as it progressed I
-          refactored to include Vue.js along with some Javascript. It was also
+          refactored to include VueJs along with some Javascript. It was also
           built to be fully responsive and includes a contact form with
           validation and Bulma as the css framework.
         </p>
