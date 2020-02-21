@@ -21,11 +21,10 @@
 
         <div class="intro-text content is-italic">
           <p>
-            <strong class="text-highlight">Greetings!</strong> My name is
-            Amanda. I am a front end web developer with a passion for
+            <strong class="text-highlight">Greetings!</strong> "My name is
+            Amanda. I am a front-end web developer with a passion for
             technology, learning and creating. My main focus is on Javascript,
-            VueJs, React, HTML5 and CSS3. I also have experience with PHP,
-            Laravel, MYSQL and Python.
+            React, Vue, HTML5 and CSS3. I also have experience with Laravel and PHP."
           </p>
         </div>
 

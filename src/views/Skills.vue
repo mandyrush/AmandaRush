@@ -5,9 +5,9 @@
         <h4>HTML/CSS</h4>
         <ul>
           <li><p class="regular-use">HTML5</p></li>
-          <li><p class="regular-use">Bulma</p></li>
-          <li><p class="regular-use">CSS</p></li>
+          <li><p class="regular-use">CSS3</p></li>
           <li><p class="regular-use">SASS/SCSS</p></li>
+          <li><p class="regular-use">Bulma</p></li>
           <li><p class="regular-use">Flexbox</p></li>
           <li><p class="familiar">Bootstrap</p></li>
           <li><p class="familiar">CSS Grid</p></li>
@@ -18,14 +18,15 @@
       <div class="column is-4">
         <h4>Javascript</h4>
         <ul>
-          <li><p class="regular-use">VueJs</p></li>
+          <li><p class="regular-use">Vue</p></li>
           <li><p class="regular-use">Vuex</p></li>
-          <li><p class="regular-use">Vue Router</p></li>
-          <li><p class="regular-use">Vue CLI</p></li>
           <li><p class="regular-use">Axios</p></li>
           <li><p class="familiar">Javascript | ES6</p></li>
-          <li><p class="familiar">NPM</p></li>
-          <li><p class="learning">React</p></li>
+          <li><p class="familiar">React</p></li>
+          <li><p class="learning">Redux</p></li>
+          <li><p class="learning">Node</p></li>
+          <li><p class="learning">Express</p></li>
+          <li><p class="learning">NPM</p></li>
         </ul>
       </div>
 
@@ -43,10 +44,10 @@
         <h4>Tools</h4>
         <ul>
           <li><p class="regular-use">PhpStorm</p></li>
-          <li><p class="regular-use">Devtools</p></li>
+          <li><p class="regular-use">Sublime</p></li>
           <li><p class="regular-use">Git | Github</p></li>
+          <li><p class="regular-use">Devtools</p></li>
           <li><p class="familiar">Postman</p></li>
-          <li><p class="familiar">Sublime</p></li>
           <li><p class="occasional-use">iterm/Terminal</p></li>
           <li><p class="occasional-use">Photoshop</p></li>
         </ul>
@@ -55,8 +56,9 @@
       <div class="column is-4">
         <h4>Database</h4>
         <ul>
-          <li><p class="familiar">MYSQL</p></li>
+          <li><p class="familiar">MySQL</p></li>
           <li><p class="occasional-use">Sequel Pro</p></li>
+          <li><p class="occasional-use">MySQL Workbench</p></li>
         </ul>
       </div>
 
@@ -64,8 +66,9 @@
         <h4>Methodologies</h4>
         <ul>
           <li><p class="familiar">AJAX</p></li>
+          <li><p class="familiar">RESTFUL API</p></li>
           <li><p class="familiar">RWD</p></li>
-          <li><p class="occasional-use">MVC</p></li>
+          <li><p class="familiar">MVC</p></li>
         </ul>
       </div>
     </div>

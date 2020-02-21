@@ -3,20 +3,41 @@
     <div class="project columns is-desktop">
       <span class="image column is-7-desktop is-12-mobile">
         <img
+          src="../../public/hammond_visual_media.jpg"
+          alt="Hammond Visual Media website in development"
+        />
+      </span>
+
+      <div class="column is-5-desktop is-12-mobile">
+        <h1 class="coming-soon">Coming Soon!</h1>
+        <span class="project-title">
+          Hammond Visual Media - (In Development)
+        </span>
+        <p class="project-description">
+          The front-end of this project is built with React and Javascript. It
+          will use a MySQL database and include an image gallery and contact
+          form. The backend will be a RESTFUL API built with Node and Express.
+        </p>
+      </div>
+    </div>
+
+    <div class="project columns is-desktop">
+      <span class="image column is-7-desktop is-12-mobile">
+        <img
           src="../../public/express_labs.jpg"
-          alt="express labs website in progress"
+          alt="Express Labs website in development"
         />
       </span>
 
       <div class="column is-5-desktop is-12-mobile">
         <span class="project-title">
-          Express Labs - (Currently in Development)
+          Express Labs - (In Development)
         </span>
 
         <p class="project-description">
           Until recently I worked remotely for Fragment Labs on a redesign of
           expresslabs.com. The frontend that I created was a fully responsive
-          SPA built with Laravel, VueJs and Vuex that will integrate with a
+          SPA built with Laravel, Vue and Vuex that will integrate with a
           Laravel backend. It used Axios to call the backend API and Bulma as
           the css framework. It included a registration form and an account
           dashboard for authorized users. As this is currently in development
@@ -45,12 +66,10 @@
         </a>
 
         <p class="project-description">
-          I created this project for my mom. She is an amazing and talented
-          seamstress in her spare time and I wanted to give her a place to show
-          off her work. It began as a Laravel project but as it progressed I
-          refactored to include VueJs along with some Javascript. It was also
-          built to be fully responsive and includes a contact form with
-          validation and Bulma as the css framework.
+          This began as a Laravel project but as it progressed I refactored to
+          include Vue and Javascript. It was also built to be fully responsive
+          and includes a contact form with validation and Bulma as the css
+          framework.
         </p>
       </div>
     </div>
@@ -125,6 +144,10 @@ img {
   display: block;
   height: auto;
   width: 100%;
+}
+
+.coming-soon {
+  color: rgb(255, 102, 0);
 }
 
 @media (max-width: 768px) {

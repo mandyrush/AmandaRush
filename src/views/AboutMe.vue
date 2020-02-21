@@ -28,12 +28,11 @@
         class="project-title link"
         >catswander.com</a
       >. As my learning continued I became interested in Javascript so I
-      switched gears and have been focusing on that ever since. I took an
-      interest in VueJs as it integrates nicely with Laravel which I was already
-      familiar with. I have completed projects using both languages and
-      frameworks and the front end of my most recent project was a SPA built
-      with VueJs and Vuex. Currently I am excited to turn my attention to
-      learning React and Redux and seeing what they have to offer.
+      switched gears and have been focusing on that ever since. I took several
+      courses on Vue, Vuex, React and Redux. I have completed projects using
+      both frameworks and the front end of my most recent project was a SPA
+      using Vue and Vuex. Currently I am diving into Node and Express to learn
+      how to build RESTFUL API's for a new project I am working on.
     </p>
 
     <p>
@@ -45,8 +44,7 @@
     <p>
       <strong class="text-highlight">Please check out my links</strong> above
       and feel free to send me a message if you would like to talk more about my
-      work. I can also be reached on Skype or by phone or email. I'd love to
-      hear from you!
+      work. I can also be reached by phone or email. I'd love to hear from you!
     </p>
   </div>
 </template>
