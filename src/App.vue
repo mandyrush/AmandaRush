@@ -24,7 +24,8 @@
             <strong class="text-highlight">Greetings!</strong> "My name is
             Amanda. I am a front-end web developer with a passion for
             technology, learning and creating. My main focus is on Javascript,
-            React, Vue, HTML5 and CSS3. I also have experience with Laravel and PHP."
+            React, Vue, HTML5 and CSS3. I also have experience with Laravel and
+            PHP."
           </p>
         </div>
 
