@@ -23,9 +23,10 @@
           <li><p class="regular-use">Axios</p></li>
           <li><p class="familiar">Javascript | ES6</p></li>
           <li><p class="familiar">React</p></li>
+          <li><p class="familiar">NodeJS</p></li>
+          <li><p class="familiar">Express</p></li>
+          <li><p class="familiar">EJS</p></li>
           <li><p class="learning">Redux</p></li>
-          <li><p class="learning">Node</p></li>
-          <li><p class="learning">Express</p></li>
           <li><p class="learning">NPM</p></li>
         </ul>
       </div>
@@ -43,12 +44,12 @@
       <div class="column is-4">
         <h4>Tools</h4>
         <ul>
+          <li><p class="regular-use">Visual Studios</p></li>
           <li><p class="regular-use">PhpStorm</p></li>
           <li><p class="regular-use">Sublime</p></li>
           <li><p class="regular-use">Git | Github</p></li>
-          <li><p class="regular-use">Devtools</p></li>
           <li><p class="familiar">Postman</p></li>
-          <li><p class="occasional-use">iterm/Terminal</p></li>
+          <li><p class="familiar">iterm/Terminal</p></li>
           <li><p class="occasional-use">Photoshop</p></li>
         </ul>
       </div>
@@ -57,7 +58,11 @@
         <h4>Database</h4>
         <ul>
           <li><p class="familiar">MySQL</p></li>
-          <li><p class="occasional-use">Sequel Pro</p></li>
+          <li><p class="familiar">Sequelize</p></li>
+          <li><p class="familiar">MongoDB</p></li>
+          <li><p class="familiar">Mongoose</p></li>
+          <li><p class="familiar">MongoDB Compass</p></li>
+          <li><p class="familiar">Sequel Pro</p></li>
           <li><p class="occasional-use">MySQL Workbench</p></li>
         </ul>
       </div>
