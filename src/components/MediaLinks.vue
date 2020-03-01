@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-links">
+  <div class="media-links">
     <span>
       <a href="https://github.com/mandyrush" target="_blank">
         <i class="fab fa-github"></i>
@@ -23,24 +23,13 @@
 <style lang="scss" scoped>
 @import '../assets/sass/main.scss';
 
-.footer-links {
+.media-links {
   display: flex;
-  justify-content: space-around;
-  padding: 0 30%;
-  width: 100%;
   span {
     font-size: 2.5rem;
+    padding: 0 1rem;
     a {
       color: $main-font-color;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  .footer-links {
-    padding: 0 15%;
-    span {
-      font-size: 2rem;
     }
   }
 }

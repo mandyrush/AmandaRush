@@ -1,5 +1,11 @@
 <template>
   <div class="description">
+    <p class="content is-large">
+      Greetings!"My name is Amanda.I am a front-end web developer with a
+      passion for technology, learning and creating. My main focus is on
+      Javascript, React, Vue, HTML5 and CSS3. I also have experience with
+      Laravel and PHP."
+    </p>
     <p>
       <strong class="text-highlight">I am a</strong> self proclaimed writer,
       traveler, artist, herder of cats and of course web developer. I spend my

@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import AboutMe from './views/AboutMe'
+import Index from './views/Index'
+import About from './views/About'
 import Skills from './views/Skills'
 import Portfolio from './views/Portfolio'
 
@@ -12,8 +13,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'about-me',
-      component: AboutMe
+      name: 'home',
+      component: Index
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
     },
     {
       path: '/skills',
