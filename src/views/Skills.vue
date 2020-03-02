@@ -1,182 +1,104 @@
 <template>
-  <div class="description content">
-    <div class="columns skill-levels">
-      <div class="column is-4">
-        <h4>HTML/CSS</h4>
-        <ul>
-          <li><p class="regular-use">HTML5</p></li>
-          <li><p class="regular-use">CSS3</p></li>
-          <li><p class="regular-use">SASS/SCSS</p></li>
-          <li><p class="regular-use">Bulma</p></li>
-          <li><p class="regular-use">Flexbox</p></li>
-          <li><p class="familiar">Bootstrap</p></li>
-          <li><p class="familiar">CSS Grid</p></li>
-          <li><p class="learning">Canvas</p></li>
-        </ul>
-      </div>
-
-      <div class="column is-4">
-        <h4>Javascript</h4>
-        <ul>
-          <li><p class="regular-use">Vue</p></li>
-          <li><p class="regular-use">Vuex</p></li>
-          <li><p class="regular-use">Axios</p></li>
-          <li><p class="familiar">Javascript | ES6</p></li>
-          <li><p class="familiar">React</p></li>
-          <li><p class="familiar">NodeJS</p></li>
-          <li><p class="familiar">Express</p></li>
-          <li><p class="familiar">EJS</p></li>
-          <li><p class="learning">Redux</p></li>
-          <li><p class="learning">NPM</p></li>
-        </ul>
-      </div>
-
-      <div class="column is-4">
-        <h4>PHP7</h4>
-        <ul>
-          <li><p class="familiar">Laravel</p></li>
-          <li><p class="occasional-use">PHP7</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="columns skill-levels">
-      <div class="column is-4">
-        <h4>Tools</h4>
-        <ul>
-          <li><p class="regular-use">Visual Studios</p></li>
-          <li><p class="regular-use">PhpStorm</p></li>
-          <li><p class="regular-use">Sublime</p></li>
-          <li><p class="regular-use">Git | Github</p></li>
-          <li><p class="familiar">Postman</p></li>
-          <li><p class="familiar">iterm/Terminal</p></li>
-          <li><p class="occasional-use">Photoshop</p></li>
-        </ul>
-      </div>
-
-      <div class="column is-4">
-        <h4>Database</h4>
-        <ul>
-          <li><p class="familiar">MySQL</p></li>
-          <li><p class="familiar">Sequelize</p></li>
-          <li><p class="familiar">MongoDB</p></li>
-          <li><p class="familiar">Mongoose</p></li>
-          <li><p class="familiar">MongoDB Compass</p></li>
-          <li><p class="familiar">Sequel Pro</p></li>
-          <li><p class="occasional-use">MySQL Workbench</p></li>
-        </ul>
-      </div>
-
-      <div class="column is-4">
-        <h4>Methodologies</h4>
-        <ul>
-          <li><p class="familiar">AJAX</p></li>
-          <li><p class="familiar">RESTFUL API</p></li>
-          <li><p class="familiar">RWD</p></li>
-          <li><p class="familiar">MVC</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="key" v-if="!isMobile">
-      <ul>
-        <li class="learning">Learning</li>
-        <li class="occasional-use">Occasional Use</li>
-        <li class="familiar">Familiar</li>
-        <li class="regular-use">Regular Use</li>
-        <li class="professional">Professional</li>
-      </ul>
+  <div class="skills columns is-multiline">
+    <div v-for="skillSet in skillList" :key="skillSet.id" class="column is-4">
+      <Skill :skillSet="skillSet" />
     </div>
   </div>
 </template>
 
 <script>
+import Skill from '../components/Skill'
+
 export default {
-  computed: {
-    isMobile() {
-      return window.innerWidth <= 768
+  name: 'Skills',
+  components: {
+    Skill
+  },
+  data() {
+    return {
+      skillList: [
+        {
+          id: 1,
+          title: 'HTML/CSS',
+          skills: [
+            { name: 'HTML5', level: 4 },
+            { name: 'CSS3', level: 4 },
+            { name: 'SASS/SCSS', level: 4 },
+            { name: 'Bulma', level: 4 },
+            { name: 'Flexbox', level: 4 },
+            { name: 'Bootstrap', level: 3 },
+            { name: 'CSS Grid', level: 3 },
+            { name: 'Canvas', level: 3 }
+          ]
+        },
+        {
+          id: 2,
+          title: 'Javascript',
+          skills: [
+            { name: 'Vue', level: 4 },
+            { name: 'Vuex', level: 4 },
+            { name: 'Axios', level: 4 },
+            { name: 'Javascript | ES6', level: 3 },
+            { name: 'React', level: 3 },
+            { name: 'NodeJS', level: 3 },
+            { name: 'Express', level: 3 },
+            { name: 'EJS', level: 3 },
+            { name: 'Redux', level: 2 },
+            { name: 'NPM', level: 2 }
+          ]
+        },
+        {
+          id: 3,
+          title: 'PHP7',
+          skills: [
+            { name: 'Laravel', level: 3 }, 
+            { name: 'PHP7', level: 2 }
+          ]
+        },
+        {
+          id: 4,
+          title: 'Tools',
+          skills: [
+            { name: 'Visual Studios', level: 4 },
+            { name: 'PhpStorm', level: 4 },
+            { name: 'Sublime', level: 4 },
+            { name: 'Git | Github', level: 4 },
+            { name: 'Postman', level: 3 },
+            { name: 'iterm/Terminal', level: 3 },
+            { name: 'Photoshop', level: 2 }
+          ]
+        },
+        {
+          id: 5,
+          title: 'Database',
+          skills: [
+            { name: 'MySQL', level: 3 },
+            { name: 'Sequelize', level: 3 },
+            { name: 'MongoDB', level: 3 },
+            { name: 'Mongoose', level: 3 },
+            { name: 'MongoDB Compass', level: 3 },
+            { name: 'Sequel Pro', level: 3 },
+            { name: 'MySQL Workbench', level: 2 }
+          ]
+        },
+        {
+          id: 6,
+          title: 'Methodologies',
+          skills: [
+            { name: 'AJAX', level: 3 },
+            { name: 'RESTFUL API', level: 3 },
+            { name: 'RWD', level: 3 },
+            { name: 'MVC', level: 3 }
+          ]
+        },
+      ]
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/sass/main.scss';
-
-.skill-levels {
-  .columns:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-  .column {
-    padding: 1rem;
-  }
-  ul {
-    margin-left: 0;
-    li {
-      list-style: none;
-      border: 1px solid $primary-three;
-      background-color: $lt-gray;
-      color: $white;
-    }
-  }
-  .content li + li {
-    margin-top: 1rem;
-  }
-  li p {
-    padding-left: 0.5rem;
-    height: 100%;
-  }
-}
-
-.learning {
-  width: 25%;
-  background-image: linear-gradient(
-    to right,
-    $primary-two-gradient6,
-    $primary-two-gradient7
-  );
-}
-.occasional-use {
-  width: 40%;
-  background-image: linear-gradient(
-    to right,
-    $primary-two-gradient4,
-    $primary-two-gradient5
-  );
-}
-.familiar {
-  width: 60%;
-  background-image: linear-gradient(
-    to right,
-    $primary-two-gradient2,
-    $primary-two-gradient3
-  );
-}
-.regular-use {
-  width: 80%;
-  background-image: linear-gradient(
-    to right,
-    $primary-two,
-    $primary-two-gradient1
-  );
-}
-.professional {
-  background-color: $primary-two;
-}
-
-.key {
-  ul {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 0 0 0;
-    li {
-      margin-top: 0;
-      list-style: none;
-      padding: 0 0.5rem;
-      width: 12%;
-      font-size: 1rem;
-      color: $white;
-    }
-  }
+.skills, .columns:last-child {
+  margin: 3rem;
 }
 </style>
