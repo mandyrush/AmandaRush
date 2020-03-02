@@ -38,6 +38,6 @@
 
 <style lang="scss" scoped>
 nav {
-  background-color: #66D2B3;
+  background-color: #66d2b3;
 }
 </style>

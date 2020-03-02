@@ -1,33 +1,39 @@
 <template>
-  <div class="box content">
-    <article>
-      <h4 class="title is-4">New Features Coming Soon!</h4>
-      <div class="columns">
-        <ul class="column">
+  <article class="coming-soon content">
+    <h4 class="title is-4">New Features Coming Soon!</h4>
+    <div class="columns is-centered">
+      <div class="column is-3 test">
+        <ul>
           <li>NodeJS</li>
           <li>Express</li>
           <li>Additional React Features</li>
         </ul>
+      </div>
 
-        <ul class="column">
+      <div class="column is-3 test">
+        <ul>
           <li>Added Javascript Functionality</li>
           <li>Sequelize</li>
           <li>Mongoose</li>
         </ul>
       </div>
-      <div class="buttons is-centered">
-        <button class="button is-primary is-inverted is-outlined">Request a Feature!</button>
-      </div>
-    </article>
-  </div>
+    </div>
+    <div class="buttons is-centered">
+      <button class="button is-primary is-inverted is-outlined">
+        Request a Feature!
+      </button>
+    </div>
+  </article>
 </template>
 
 <style lang="scss" scoped>
-.box {
-  width: 1000px;
-  padding: 2rem 5rem;
-  margin: auto;
-  background-color: #66D2B3;
+.test {
+  display: flex;
+  justify-content: center;
+}
+.coming-soon {
+  background-color: #66d2b3;
+  padding: 3rem;
 }
 
 .title {
