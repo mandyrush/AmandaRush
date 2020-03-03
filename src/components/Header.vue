@@ -1,7 +1,7 @@
 <template>
   <article class="columns is-vcentered">
-    <div class="column is-4-desktop is-12-mobile">
-      <figure class="full-img">
+    <div class="column is-4-desktop is-12-mobile test">
+      <figure class="full-img image">
         <img src="../../public/amandaPic.jpg" alt="Image of Amanda" />
       </figure>
     </div>
@@ -13,42 +13,28 @@
           <div class="cursor">&nbsp;|</div>
         </div>
       </header>
-      <hr />
 
-      <ul>
-        <li>A hard working and dedicated web developer.</li>
-        <li>Friendly and enjoyable to interact with.</li>
-        <li>Upgrades and features added regularly.</li>
-        <li>Over two years of experience.</li>
-      </ul>
-
-      <div class="feature-list">
-        <h5>Features Included:</h5>
-        <div class="columns">
-          <ul class="column">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>GIT</li>
-          </ul>
-
-          <ul class="column">
-            <li>Javascript</li>
-            <li>VueJS</li>
-            <li>React</li>
-          </ul>
-
-          <ul class="column">
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>RWD</li>
-          </ul>
+      <transition name="fade" appear>
+        <div class="bio">
+          <hr>
+          <p>
+            <span class="varType">let </span>
+            <span class="propertyName">qualities </span>
+            <span class="equalSign">= </span>
+            <span class="bracket">[ </span>
+            <span class="values">'Creative', 'Dedicated', 'Driven', ... </span>
+            <span class="bracket">]</span>
+          </p>
+          <p>
+            <span class="varType">let </span>
+            <span class="propertyName">skills </span>
+            <span class="equalSign">= </span>
+            <span class="bracket">[ </span>
+            <span class="values">'HTML', 'CSS', 'Javascript', 'VueJS', 'React' ... </span>
+            <span class="bracket">]</span>
+          </p>
         </div>
-        <a href="/">See Full Feature List!</a>
-      </div>
-
-      <div class="buttons is-left">
-        <button class="button is-primary">Contact Now!</button>
-      </div>
+      </transition>
     </div>
   </article>
 </template>
@@ -57,7 +43,7 @@
 export default {
   data() {
     return {
-      nameArray: ['A', 'M', 'A', 'N', 'D', 'A', '_', 'R', 'U', 'S', 'H', '.'],
+      nameArray: ['A', 'M', 'A', 'N', 'D', 'A', '_', 'R', 'U', 'S', 'H'],
       name: ''
     }
   },
@@ -83,13 +69,18 @@ export default {
 
 <style lang="scss">
 @import '../assets/sass/main.scss';
+
 article {
   padding: 3rem 5rem;
+  background-color: $dark;
 }
 
 .full-img {
   img {
-    box-shadow: 5px 5px 8px #433d3f;
+    box-shadow: 5px 5px 8px black;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
   }
 }
 
@@ -104,25 +95,31 @@ article {
       align-items: start;
       margin-bottom: 0;
       .name {
-        color: #a9dc76;
+        color: $green;
       }
     }
   }
 
   @keyframes blink {
     from {
-      color: white;
+      color: $dark;
     }
     to {
-      color: #2c292d;
+      color: $white;
     }
   }
 
   .cursor {
-    color: white;
+    color: $dark;
     animation-name: blink;
     animation-duration: 1s;
     animation-iteration-count: 8;
+  }
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    transition: opacity 0.5s ease-in 8s;
   }
   .feature-list {
     margin: 1rem 0;
@@ -133,5 +130,24 @@ article {
       padding-bottom: 0;
     }
   }
+}
+.bio {
+  /*font-weight: bold;*/
+  font-size: 1.5rem;
+}
+.varType {
+  color: $blue;
+}
+.propertyName {
+  color: $white;
+}
+.equalSign {
+  color: $pink;
+}
+.bracket {
+  color: $white;
+}
+.values {
+  color: $yellow;
 }
 </style>
