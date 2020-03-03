@@ -28,7 +28,7 @@ export default {
             { name: 'Flexbox', level: 4 },
             { name: 'Bootstrap', level: 3 },
             { name: 'CSS Grid', level: 3 },
-            { name: 'Canvas', level: 3 }
+            { name: 'Canvas', level: 2 }
           ]
         },
         {
@@ -37,14 +37,12 @@ export default {
           skills: [
             { name: 'Vue', level: 4 },
             { name: 'Vuex', level: 4 },
-            { name: 'Axios', level: 4 },
+            { name: 'Axios', level: 3 },
             { name: 'Javascript | ES6', level: 3 },
             { name: 'React', level: 3 },
             { name: 'NodeJS', level: 3 },
             { name: 'Express', level: 3 },
-            { name: 'EJS', level: 3 },
-            { name: 'Redux', level: 2 },
-            { name: 'NPM', level: 2 }
+            { name: 'Redux', level: 2 }
           ]
         },
         {
@@ -72,12 +70,12 @@ export default {
           id: 5,
           title: 'Database',
           skills: [
-            { name: 'MySQL', level: 3 },
-            { name: 'Sequelize', level: 3 },
-            { name: 'MongoDB', level: 3 },
-            { name: 'Mongoose', level: 3 },
-            { name: 'MongoDB Compass', level: 3 },
-            { name: 'Sequel Pro', level: 3 },
+            { name: 'MySQL', level: 2 },
+            { name: 'Sequelize', level: 2 },
+            { name: 'MongoDB', level: 2 },
+            { name: 'Mongoose', level: 2 },
+            { name: 'MongoDB Compass', level: 2 },
+            { name: 'Sequel Pro', level: 2 },
             { name: 'MySQL Workbench', level: 2 }
           ]
         },
@@ -85,10 +83,10 @@ export default {
           id: 6,
           title: 'Methodologies',
           skills: [
-            { name: 'AJAX', level: 3 },
-            { name: 'RESTFUL API', level: 3 },
             { name: 'RWD', level: 3 },
-            { name: 'MVC', level: 3 }
+            { name: 'MVC', level: 2 },
+            { name: 'AJAX', level: 2 },
+            { name: 'RESTFUL API', level: 2 }
           ]
         },
       ]

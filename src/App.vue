@@ -22,6 +22,6 @@ export default {
 @import './assets/sass/main.scss';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  color: $main-font-color;
+  color: $dark;
 }
 </style>

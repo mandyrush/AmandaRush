@@ -57,7 +57,7 @@ export default {
           imageAlt: 'Hammond Visual Media website in development',
           link: null,
           content:
-            'The front-end of this project is built with React and Javascript. It will use a MySQL database and include an image gallery and contact form. The backend will be a RESTFUL API built with Node and Express.'
+            'The front-end of this project is built with React and Javascript. It will use a MySQL database and include an image gallery and contact form. The backend will be built with Node and Express.'
         },
         {
           id: 4,
