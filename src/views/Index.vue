@@ -1,18 +1,18 @@
 <template>
   <div>
     <Header />
-    <ComingSoon />
+    <CurrentLearning />
   </div>
 </template>
 
 <script>
 import Header from '../components/Header'
-import ComingSoon from '../components/ComingSoon'
+import CurrentLearning from '../components/CurrentLearning'
 
 export default {
   components: {
     Header,
-    ComingSoon
+    CurrentLearning
   }
 }
 </script>
