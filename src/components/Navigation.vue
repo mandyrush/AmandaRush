@@ -6,7 +6,8 @@
         class="navbar-burger burger"
         aria-label="menu"
         aria-expanded="false"
-        data-target="navbarBasicExample"
+        data-target="navbar"
+        @click="toggleMenu"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -14,7 +15,7 @@
       </a>
     </div>
 
-    <div class="navbar-menu">
+    <div :class="menuIsVisible ? 'is-active navbar-menu' : 'navbar-menu'">
       <div class="navbar-start">
         <router-link :to="{ name: 'home' }" class="navbar-item">
           <i class="fas fa-home"></i>
@@ -55,19 +56,37 @@
   </nav>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      menuIsVisible: false
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.menuIsVisible = !this.menuIsVisible
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 nav {
   background-color: #ea5c86;
 }
 .navbar-menu {
-  .navbar-item {
+  a {
     font-weight: bold;
     color: white;
+  }
+  a:hover, a:focus {
+    color: #ea5c86;
   }
 }
 .navbar-menu.is-active {
   .navbar-item {
-    background-color: lightgray;
+    background-color: #2c292d;
   }
 }
 .media-link {
@@ -79,5 +98,9 @@ nav {
       color: #ea5c86;
     }
   }
+}
+.burger span {
+  color: white;
+
 }
 </style>
