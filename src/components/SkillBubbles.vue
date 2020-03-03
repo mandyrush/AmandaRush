@@ -1,25 +1,13 @@
 <template>
   <div>
-    <transition-group
-      appear
-      :css="false"
-      @before-enter="beforeEnter"
-      @enter="enter"
-    >
-      <div
-        v-for="bubble in bubbles"
-        :key="bubble.id"
-        class="skill-bubbles"
-      >
-        <SkillBubble :colored="bubble.colored" />
-      </div>
-    </transition-group>
+    <div v-for="bubble in bubbles" :key="bubble.id" class="skill-bubbles">
+      <SkillBubble :colored="bubble.colored" :isVisible="bubble.isVisible" />
+    </div>
   </div>
 </template>
 
 <script>
 import SkillBubble from './SkillBubble'
-import Velocity from 'velocity-animate'
 
 export default {
   name: 'SkillBubbles',
@@ -34,43 +22,35 @@ export default {
   data() {
     return {
       bubbles: [
-        { id: 1, colored: false },
-        { id: 2, colored: false },
-        { id: 3, colored: false },
-        { id: 4, colored: false },
-        { id: 5, colored: false }
+        { id: 1, colored: false, isVisible: true },
+        { id: 2, colored: false, isVisible: true },
+        { id: 3, colored: false, isVisible: true },
+        { id: 4, colored: false, isVisible: true },
+        { id: 5, colored: false, isVisible: true }
       ]
     }
   },
   methods: {
-    setBubbleColor() {
-      //Iterate over the bubbles array
-      for (let i = 0; i < this.bubbles.length; i++) {
-        if (this.level >= this.bubbles[i].id) {
-          this.bubbles[i].colored = true
+    colorBubble(i) {
+      setTimeout(() => {
+        if (i > 0) {
+          if (this.level >= this.bubbles[this.bubbles.length - i].id) {
+            this.bubbles[this.bubbles.length - i].colored = true
+          }
+          i--
+          this.colorBubble(i)
         }
-      }
-    },
-    beforeEnter: function(el) {
-      el.style.opacity = 0.5;
-      el.style.width = '0rem';
-    },
-    enter: function(el, done) {
-      Velocity(
-        el,
-        { opacity: 1, width: '2rem' },
-        { duration: 1000, easing: 'easeInOutBack', complete: done }
-      )
+      }, 500)
     }
   },
   mounted() {
-    this.setBubbleColor()
+    this.colorBubble(5)
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.skill-bubbles span {
+.skill-bubbles div {
   display: flex;
 }
 </style>

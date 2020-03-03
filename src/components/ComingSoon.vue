@@ -32,7 +32,7 @@
   justify-content: center;
 }
 .coming-soon {
-  background-color: #66d2b3;
+  background-color: #78dce7;
   padding: 3rem;
 }
 

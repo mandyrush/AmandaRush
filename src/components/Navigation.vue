@@ -32,12 +32,52 @@
           Portfolio
         </router-link>
       </div>
+      <div class="navbar-end">
+        <a
+          href="https://github.com/mandyrush"
+          target="_blank"
+          class="navbar-item media-link"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://linkedin.com/in/amanda-rush"
+          target="_blank"
+          class="navbar-item media-link"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:mandyrush85@gmail.com" class="navbar-item media-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
     </div>
   </nav>
 </template>
 
 <style lang="scss" scoped>
 nav {
-  background-color: #66d2b3;
+  background-color: #ea5c86;
+}
+.navbar-menu {
+  .navbar-item {
+    font-weight: bold;
+    color: white;
+  }
+}
+.navbar-menu.is-active {
+  .navbar-item {
+    background-color: lightgray;
+  }
+}
+.media-link {
+  font-size: 2rem;
+  padding: 0 1rem;
+  a {
+    color: white;
+    &:hover {
+      color: #ea5c86;
+    }
+  }
 }
 </style>

@@ -27,9 +27,10 @@ export default {
 <style lang="scss" scoped>
 .card {
   height: 100%;
-  box-shadow: 5px 5px 8px #9e9498;
+  box-shadow: 5px 5px 8px black;
 }
 .subtitle {
-  color: #3898dc;
+  color: #ea5c86;
+  font-weight: bold;
 }
 </style>

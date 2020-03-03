@@ -1,5 +1,10 @@
 <template>
-  <div :class="colored ? 'skill-bubble colored' : 'skill-bubble'"></div>
+  <transition name="fade" appear>
+    <div
+      :class="colored ? 'skill-bubble colored' : 'skill-bubble'"
+      v-if="isVisible"
+    ></div>
+  </transition>
 </template>
 
 <script>
@@ -7,11 +12,9 @@ export default {
   props: {
     colored: {
       type: Boolean
-    }
-  },
-  data() {
-    return {
-      time: 2
+    },
+    isVisible: {
+      type: Boolean
     }
   }
 }
@@ -20,13 +23,21 @@ export default {
 <style lang="scss" scoped>
 .skill-bubble {
   margin-right: 1rem;
-  border: 1px solid black;
+  border: 1px solid #aa9df2;
   border-radius: 50%;
   height: 15px;
   width: 15px;
 }
 
 .colored {
-  background-color: purple;
+  background-color: #78dce7;
+}
+
+.fade-enter {
+  opacity: 0.9;
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s ease-in;
 }
 </style>

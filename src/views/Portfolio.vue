@@ -76,7 +76,8 @@ export default {
 
 <style lang="scss" scoped>
 .portfolio {
-  margin: 3rem;
+  padding: 3rem;
+  background-color: #2c292d;
 }
 .card-group {
   display: flex;
@@ -84,7 +85,7 @@ export default {
 }
 .image-link {
   :hover {
-    opacity: 0.9;
+    opacity: 0.95;
   }
 }
 .column {
