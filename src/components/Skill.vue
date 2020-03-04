@@ -3,7 +3,9 @@
     <h4 class="skill-title">{{ skillSet.title }}</h4>
     <ul v-for="skill in skillSet.skills" :key="skill.name">
       <li class="skill columns">
-        <span class="skill-name column is-6-desktop is-5-mobile">{{ skill.name }}</span>
+        <span class="skill-name column is-6-desktop is-5-mobile">{{
+          skill.name
+        }}</span>
         <div class="skill-bubbles column is-6-desktop is-7-mobile">
           <SkillBubbles :level="skill.level" />
         </div>
@@ -49,7 +51,6 @@ export default {
 }
 .bubble-number {
   display: flex;
-
   li {
     list-style: none;
     margin-right: 1rem;
@@ -57,7 +58,7 @@ export default {
     width: 15px;
   }
 }
-@media(max-width: 1035px) {
+@media (max-width: 1025px) {
   .box ul {
     margin-left: 0;
   }

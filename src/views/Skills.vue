@@ -44,18 +44,15 @@ export default {
             { name: 'Axios', level: 3 },
             { name: 'Javascript | ES6', level: 3 },
             { name: 'React', level: 3 },
-            { name: 'NodeJS', level: 3 },
-            { name: 'Express', level: 3 },
+            { name: 'NodeJS', level: 2 },
+            { name: 'Express', level: 2 },
             { name: 'Redux', level: 2 }
           ]
         },
         {
           id: 3,
           title: 'PHP7',
-          skills: [
-            { name: 'Laravel', level: 3 }, 
-            { name: 'PHP7', level: 2 }
-          ]
+          skills: [{ name: 'Laravel', level: 3 }, { name: 'PHP7', level: 2 }]
         },
         {
           id: 4,
@@ -92,7 +89,7 @@ export default {
             { name: 'AJAX', level: 2 },
             { name: 'RESTFUL API', level: 2 }
           ]
-        },
+        }
       ]
     }
   }
@@ -100,12 +97,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.skills, .columns:last-child {
+.skills,
+.columns:last-child {
   margin: 3rem;
 }
 
-@media(max-width: 1035px) {
-  .skills, .columns:last-child {
+@media (max-width: 1025px) {
+  .skills,
+  .columns:last-child {
     margin: 0;
   }
 }

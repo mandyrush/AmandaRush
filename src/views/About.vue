@@ -55,6 +55,7 @@
 
 <script>
 import ContactButton from '../UI/ContactButton'
+
 export default {
   components: {
     ContactButton

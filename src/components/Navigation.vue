@@ -3,7 +3,11 @@
     <div class="navbar-brand">
       <a
         role="button"
-        :class="menuIsVisible ? 'navbar-burger burger is-active' : 'navbar-burger burger'"
+        :class="
+          menuIsVisible
+            ? 'navbar-burger burger is-active'
+            : 'navbar-burger burger'
+        "
         aria-label="menu"
         aria-expanded="false"
         data-target="navbar"
@@ -72,35 +76,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-nav {
-  background-color: #ea5c86;
+@import '../assets/sass/main.scss';
+.navbar {
+  background-color: $pink;
 }
 .navbar-menu {
   a {
     font-weight: bold;
-    color: white;
+    color: $white;
   }
-  a:hover, a:focus {
-    color: #ea5c86;
+  a:hover,
+  a:focus {
+    color: $pink;
   }
 }
 .navbar-menu.is-active {
   .navbar-item {
-    background-color: #2c292d;
+    background-color: $dark;
   }
 }
 .media-link {
   font-size: 2rem;
   padding: 0 1rem;
   a {
-    color: white;
+    color: $white;
     &:hover {
-      color: #ea5c86;
+      color: $pink;
     }
   }
 }
 .burger span {
-  color: white;
-
+  color: $white;
 }
 </style>

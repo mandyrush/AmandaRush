@@ -17,7 +17,7 @@
 
       <transition name="fade" appear>
         <div class="bio">
-          <hr>
+          <hr />
           <p>
             <span class="varType">let </span>
             <span class="propertyName">qualities </span>
@@ -31,7 +31,9 @@
             <span class="propertyName">skills </span>
             <span class="equalSign">= </span>
             <span class="bracket">[ </span>
-            <span class="values">'HTML', 'CSS', 'Javascript', 'VueJS', 'React' ... </span>
+            <span class="values"
+              >'HTML', 'CSS', 'Javascript', 'VueJS', 'React' ...
+            </span>
             <span class="bracket">]</span>
           </p>
         </div>
@@ -46,7 +48,7 @@ export default {
     return {
       nameArray: ['A', 'M', 'A', 'N', 'D', 'A', '_', 'R', 'U', 'S', 'H'],
       name: '',
-      isMobile: window.innerWidth < 1035
+      isMobile: window.innerWidth < 1025
     }
   },
   methods: {
@@ -62,7 +64,7 @@ export default {
     }
   },
   mounted() {
-    if(!this.isMobile) {
+    if (!this.isMobile) {
       setTimeout(() => {
         this.printName(this.nameArray.length)
       }, 2000)
@@ -128,6 +130,7 @@ article {
 
 .bio {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 .varType {
   color: $blue;

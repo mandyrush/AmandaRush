@@ -25,12 +25,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/sass/main.scss';
 .card {
   height: 100%;
   box-shadow: 5px 5px 8px black;
 }
 .subtitle {
-  color: #ea5c86;
+  color: $pink;
   font-weight: bold;
 }
 </style>

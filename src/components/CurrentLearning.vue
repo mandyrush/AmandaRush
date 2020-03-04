@@ -4,21 +4,15 @@
     <div class="columns is-centered learning-list">
       <div class="column is-2 learning-items">
         <ul>
-          <li>
-            <i class="fab fa-node"></i>
-          </li>
+          <li><i class="fab fa-node"></i></li>
           <li>Express</li>
         </ul>
       </div>
 
       <div class="column is-2 learning-items">
         <ul>
-          <li>
-            <i class="fab fa-react"></i>
-          </li>
-          <li>
-            <i class="fab fa-js-square"></i>
-          </li>
+          <li><i class="fab fa-react"></i></li>
+          <li><i class="fab fa-js-square"></i></li>
         </ul>
       </div>
 
@@ -36,6 +30,7 @@
 <script>
 import ContactButton from '../UI/ContactButton'
 export default {
+  name: 'CurrentLearning',
   components: {
     ContactButton
   }
@@ -68,7 +63,7 @@ export default {
   justify-content: center;
   ul {
     margin: 0;
-    li{
+    li {
       text-align: center;
     }
   }

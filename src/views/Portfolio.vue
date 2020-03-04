@@ -75,9 +75,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/sass/main.scss';
 .portfolio {
   padding: 3rem;
-  background-color: #2c292d;
+  background-color: $dark;
 }
 .card-group {
   display: flex;
@@ -91,7 +92,7 @@ export default {
 .column {
   margin-bottom: 2rem;
 }
-@media(max-width: 1035px) {
+@media (max-width: 1025px) {
   .portfolio {
     padding: 1rem;
   }
