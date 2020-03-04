@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/sass/main.scss';
 .home {
-  background-color: $yellow;
-  height: 100%;
+  background-color: $dark;
+  min-height: 100vh;
 }
 </style>

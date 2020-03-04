@@ -79,6 +79,7 @@ export default {
 .portfolio {
   padding: 3rem;
   background-color: $dark;
+  min-height: 100vh;
 }
 .card-group {
   display: flex;

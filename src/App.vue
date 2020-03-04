@@ -23,5 +23,9 @@ export default {
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: $dark;
+  min-height: 100vh;
+}
+main {
+  height: 100%;
 }
 </style>

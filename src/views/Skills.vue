@@ -97,6 +97,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.skills {
+  height: 100%;
+}
 .skills,
 .columns:last-child {
   margin: 3rem;

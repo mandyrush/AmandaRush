@@ -65,6 +65,9 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/sass/main.scss';
+.about-me {
+  height: 100%;
+}
 .parallax {
   min-height: 500px;
   background-attachment: fixed;
