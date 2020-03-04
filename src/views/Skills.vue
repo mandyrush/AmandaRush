@@ -1,6 +1,10 @@
 <template>
   <div class="skills columns is-multiline">
-    <div v-for="skillSet in skillList" :key="skillSet.id" class="column is-4">
+    <div
+      v-for="skillSet in skillList"
+      :key="skillSet.id"
+      class="column is-4-desktop is-12-mobile"
+    >
       <Skill :skillSet="skillSet" />
     </div>
   </div>
@@ -62,7 +66,7 @@ export default {
             { name: 'Sublime', level: 4 },
             { name: 'Git | Github', level: 4 },
             { name: 'Postman', level: 3 },
-            { name: 'iterm/Terminal', level: 3 },
+            { name: 'iterm/ Terminal', level: 3 },
             { name: 'Photoshop', level: 2 }
           ]
         },
@@ -98,5 +102,11 @@ export default {
 <style lang="scss" scoped>
 .skills, .columns:last-child {
   margin: 3rem;
+}
+
+@media(max-width: 1035px) {
+  .skills, .columns:last-child {
+    margin: 0;
+  }
 }
 </style>

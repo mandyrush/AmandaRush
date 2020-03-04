@@ -3,7 +3,7 @@
     <div class="navbar-brand">
       <a
         role="button"
-        class="navbar-burger burger"
+        :class="menuIsVisible ? 'navbar-burger burger is-active' : 'navbar-burger burger'"
         aria-label="menu"
         aria-expanded="false"
         data-target="navbar"

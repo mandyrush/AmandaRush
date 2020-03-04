@@ -91,4 +91,12 @@ export default {
 .column {
   margin-bottom: 2rem;
 }
+@media(max-width: 1035px) {
+  .portfolio {
+    padding: 1rem;
+  }
+  .column {
+    margin-bottom: 0;
+  }
+}
 </style>

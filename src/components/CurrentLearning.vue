@@ -2,7 +2,7 @@
   <article class="current-learning content">
     <h4 class="title is-3">Look What I'm Learning!</h4>
     <div class="columns is-centered learning-list">
-      <div class="column is-2 test">
+      <div class="column is-2 learning-items">
         <ul>
           <li>
             <i class="fab fa-node"></i>
@@ -11,7 +11,7 @@
         </ul>
       </div>
 
-      <div class="column is-2 test">
+      <div class="column is-2 learning-items">
         <ul>
           <li>
             <i class="fab fa-react"></i>
@@ -22,7 +22,7 @@
         </ul>
       </div>
 
-      <div class="column is-2 test">
+      <div class="column is-2 learning-items">
         <ul>
           <li>Sequelize</li>
           <li>Mongoose</li>
@@ -44,11 +44,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/sass/main.scss';
-
-.test {
-  display: flex;
-  justify-content: center;
-}
 .current-learning {
   background-color: $blue;
   padding: 3rem;
@@ -64,6 +59,17 @@ export default {
     font-size: 2rem;
     i {
       font-size: 3rem;
+    }
+  }
+}
+
+.learning-items {
+  display: flex;
+  justify-content: center;
+  ul {
+    margin: 0;
+    li{
+      text-align: center;
     }
   }
 }

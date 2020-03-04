@@ -1,6 +1,6 @@
 <template>
-  <article class="columns is-vcentered">
-    <div class="column is-4-desktop is-12-mobile test">
+  <article class="columns is-vcentered is-marginless">
+    <div class="column is-4-desktop is-12-mobile">
       <figure class="full-img image">
         <img src="../../public/amandaPic.jpg" alt="Image of Amanda" />
       </figure>
@@ -9,7 +9,8 @@
     <div class="column is-8-desktop is-12-mobile header-content content">
       <header>
         <div class="title is-3">
-          <div class="name">{{ name }}</div>
+          <div class="name" v-if="!isMobile">{{ name }}</div>
+          <div class="name" v-else>AMANDA RUSH</div>
           <div class="cursor">&nbsp;|</div>
         </div>
       </header>
@@ -44,7 +45,8 @@ export default {
   data() {
     return {
       nameArray: ['A', 'M', 'A', 'N', 'D', 'A', '_', 'R', 'U', 'S', 'H'],
-      name: ''
+      name: '',
+      isMobile: window.innerWidth < 1035
     }
   },
   methods: {
@@ -60,19 +62,22 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => {
-      this.printName(this.nameArray.length)
-    }, 2000)
+    if(!this.isMobile) {
+      setTimeout(() => {
+        this.printName(this.nameArray.length)
+      }, 2000)
+    }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../assets/sass/main.scss';
 
 article {
   padding: 3rem 5rem;
   background-color: $dark;
+  border-bottom: 15px solid $white;
 }
 
 .full-img {
@@ -86,9 +91,6 @@ article {
 
 .column.header-content {
   padding: 0 5rem;
-  ul li {
-    list-style-type: disc;
-  }
   header {
     .title {
       display: flex;
@@ -99,40 +101,32 @@ article {
       }
     }
   }
+}
 
-  @keyframes blink {
-    from {
-      color: $dark;
-    }
-    to {
-      color: $white;
-    }
-  }
+.cursor {
+  color: $dark;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: 8;
+}
 
-  .cursor {
+@keyframes blink {
+  from {
     color: $dark;
-    animation-name: blink;
-    animation-duration: 1s;
-    animation-iteration-count: 8;
   }
-  .fade-enter {
-    opacity: 0;
-  }
-  .fade-enter-active {
-    transition: opacity 0.5s ease-in 8s;
-  }
-  .feature-list {
-    margin: 1rem 0;
-    ul {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
+  to {
+    color: $white;
   }
 }
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.5s ease-in 8s;
+}
+
 .bio {
-  /*font-weight: bold;*/
   font-size: 1.5rem;
 }
 .varType {
@@ -149,5 +143,24 @@ article {
 }
 .values {
   color: $yellow;
+}
+
+@media (max-width: 1025px) {
+  article {
+    padding: 3rem 0;
+  }
+  .column.header-content {
+    padding: 1rem;
+    text-align: center;
+    .name {
+      width: 100%;
+    }
+  }
+  .cursor {
+    display: none;
+  }
+  .fade-enter-active {
+    transition: opacity 0.5s ease-in 1s;
+  }
 }
 </style>

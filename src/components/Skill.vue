@@ -1,10 +1,10 @@
 <template>
-  <div :class="boxColor + ' box content'">
+  <div class="box content">
     <h4 class="skill-title">{{ skillSet.title }}</h4>
     <ul v-for="skill in skillSet.skills" :key="skill.name">
       <li class="skill columns">
-        <span class="skill-name column is-6">{{ skill.name }}</span>
-        <div class="skill-bubbles column is-6">
+        <span class="skill-name column is-6-desktop is-5-mobile">{{ skill.name }}</span>
+        <div class="skill-bubbles column is-6-desktop is-7-mobile">
           <SkillBubbles :level="skill.level" />
         </div>
       </li>
@@ -24,70 +24,26 @@ export default {
     skillSet: {
       type: Object
     }
-  },
-  data() {
-    return {
-      boxColor: ''
-    }
-  },
-  methods: {
-    setSkillBoxColor() {
-      switch (this.skillSet.id) {
-        case 1:
-          this.boxColor = 'boxColorOne'
-          break
-        case 2:
-          this.boxColor = 'boxColorTwo'
-          break
-        case 3:
-          this.boxColor = 'boxColorThree'
-          break
-        case 4:
-          this.boxColor = 'boxColorFour'
-          break
-        case 5:
-          this.boxColor = 'boxColorFive'
-          break
-        case 6:
-          this.boxColor = 'boxColorSix'
-          break
-      }
-    }
-  },
-  created() {
-    this.setSkillBoxColor()
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.boxColorOne {
-}
-.boxColorTwo {
-}
-.boxColorThree {
-}
-.boxColorFour {
-}
-.boxColorFive {
-}
-.boxColorSix {
-}
+@import '../assets/sass/main.scss';
 .box {
   height: 100%;
-  color: white;
-  background-color: #2c292d;
+  background-color: $dark;
+}
+.box h4 {
+  color: $pink;
 }
 .skill {
   display: flex;
   align-items: center;
 }
-.skill-title {
-  color: #ea5c86;
-}
 .skill-name {
   padding-right: 1rem;
-  color: #a9dc76;
+  color: $green;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -99,6 +55,11 @@ export default {
     margin-right: 1rem;
     height: 15px;
     width: 15px;
+  }
+}
+@media(max-width: 1035px) {
+  .box ul {
+    margin-left: 0;
   }
 }
 </style>

@@ -21,16 +21,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/sass/main.scss';
 .skill-bubble {
   margin-right: 1rem;
-  border: 1px solid #aa9df2;
+  border: 1px solid $purple;
   border-radius: 50%;
   height: 15px;
   width: 15px;
 }
 
 .colored {
-  background-color: #78dce7;
+  background-color: $blue;
 }
 
 .fade-enter {
