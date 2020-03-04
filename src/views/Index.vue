@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <Header />
     <CurrentLearning />
   </div>
@@ -16,3 +16,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import '../assets/sass/main.scss';
+.home {
+  background-color: $yellow;
+  height: 100%;
+}
+</style>

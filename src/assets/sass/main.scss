@@ -3,6 +3,10 @@ $primary: #EA5C86;
 
 @import '~bulma/bulma';
 
+html body {
+  height: 100%;
+}
+
 //Colors
 //Monokai Color Theme
 $dark: #2C292D;
