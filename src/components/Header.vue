@@ -9,9 +9,11 @@
     <div class="column is-8-desktop is-12-mobile header-content content">
       <header>
         <div class="title is-3">
-          <div class="name" v-if="!isMobile">{{ name }}</div>
+          <div class="name" v-if="!isMobile">
+            {{ name }}
+            <span class="cursor">|</span>
+          </div>
           <div class="name" v-else>AMANDA RUSH</div>
-          <div class="cursor">&nbsp;|</div>
         </div>
       </header>
 
