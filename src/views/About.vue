@@ -3,7 +3,7 @@
     <div class="parallax parallax-one"></div>
 
     <div class="solid-block-one content-section">
-      <div>
+      <div class="content">
         <h2 class="title is-2 is-centered">Between Code</h2>
         <p>
           "I am a self proclaimed writer, traveler, artist, herder of cats and
@@ -20,7 +20,7 @@
     <div class="parallax parallax-two"></div>
 
     <div class="solid-block-two content-section">
-      <div>
+      <div class="content">
         <h2 class="title is-2">Previous Experience</h2>
         <p>
           "I'm currently working on a few freelance projects and until recently
@@ -35,7 +35,7 @@
     <div class="parallax parallax-three"></div>
 
     <div class="solid-block-three content-section">
-      <div>
+      <div class="content">
         <h2 class="title is-2">Looking Forward</h2>
         <p>
           "I love to learn and make a point each day to set aside a little time
@@ -85,7 +85,6 @@ export default {
   background-image: url('../../public/burano.jpg');
 }
 .solid-block-one {
-  min-height: 500px;
   background-color: $dark;
   color: $white;
   h2 {
@@ -97,7 +96,6 @@ export default {
   }
 }
 .solid-block-two {
-  min-height: 500px;
   background-color: $yellow;
   color: $dark;
   p,
@@ -106,7 +104,6 @@ export default {
   }
 }
 .solid-block-three {
-  min-height: 500px;
   background-color: $dark;
   color: $white;
   h2 {
@@ -118,10 +115,16 @@ export default {
   }
 }
 .content-section {
+  min-height: 500px;
   padding: 1rem 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  .content {
+    max-width: 1500px;
+    margin: 2rem auto;
+    box-sizing: border-box;
+  }
   h2 {
     text-align: center;
     font-family: 'Spartan', sans-serif;
@@ -132,12 +135,14 @@ export default {
   }
 }
 .contact-btn {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
-@media only screen and (max-device-width: 1366px) {
+@media (max-width: 1024px) {
   .parallax {
     background-attachment: scroll;
   }
+}
+@media (max-width: 1200px) {
   .content-section {
     padding: 1rem;
     p {

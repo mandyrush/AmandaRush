@@ -4,7 +4,7 @@
       <div
         v-for="card in cards"
         :key="card.id"
-        class="column is-5-desktop is-12-mobile"
+        class="column is-5-desktop is-6-tablet is-12-mobile"
       >
         <a
           :href="card.link"
@@ -80,10 +80,14 @@ export default {
   padding: 3rem;
   background-color: $dark;
   min-height: 100vh;
+  width: 100%;
 }
 .card-group {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
 }
 .image-link {
   :hover {

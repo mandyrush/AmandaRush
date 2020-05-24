@@ -1,9 +1,9 @@
 <template>
-  <div class="skills columns is-multiline">
+  <div class="skills columns is-centered is-multiline">
     <div
       v-for="skillSet in skillList"
       :key="skillSet.id"
-      class="column is-4-desktop is-12-mobile"
+      class="column is-12-mobile is-6-desktop is-4-widescreen"
     >
       <Skill :skillSet="skillSet" />
     </div>
@@ -52,7 +52,10 @@ export default {
         {
           id: 3,
           title: 'PHP7',
-          skills: [{ name: 'Laravel', level: 3 }, { name: 'PHP7', level: 2 }]
+          skills: [
+            { name: 'Laravel', level: 3 },
+            { name: 'PHP7', level: 2 }
+          ]
         },
         {
           id: 4,
@@ -99,10 +102,8 @@ export default {
 <style lang="scss" scoped>
 .skills {
   height: 100%;
-}
-.skills,
-.columns:last-child {
-  margin: 3rem;
+  max-width: 1500px;
+  margin: 3rem auto;
 }
 
 @media (max-width: 1025px) {

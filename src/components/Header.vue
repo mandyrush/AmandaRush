@@ -1,12 +1,12 @@
 <template>
-  <article class="columns is-vcentered is-marginless">
-    <div class="column is-4-desktop is-12-mobile">
+  <article class="columns is-centered is-vcentered is-marginless">
+    <div class="column is-12-mobile is-4-desktop is-3-widescreen">
       <figure class="full-img image">
         <img src="../../public/amandaPic.jpg" alt="Image of Amanda" />
       </figure>
     </div>
 
-    <div class="column is-8-desktop is-12-mobile header-content content">
+    <div class="column is-12-mobile is-8-desktop header-content content">
       <header>
         <div class="title is-3">
           <div class="name" v-if="!isMobile">
@@ -85,9 +85,12 @@ article {
 }
 
 .full-img {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
   img {
     box-shadow: 5px 5px 8px black;
-    max-width: 80%;
+    width: 100%;
     height: auto;
     margin: auto;
   }
@@ -134,6 +137,10 @@ article {
   font-size: 1.5rem;
   font-weight: bold;
 }
+.bio hr {
+  width: 100%;
+  max-width: 700px;
+}
 .varType {
   color: $blue;
 }
@@ -157,6 +164,7 @@ article {
   .column.header-content {
     padding: 1rem;
     text-align: center;
+
     .name {
       width: 100%;
     }
