@@ -13,7 +13,7 @@
     "core-js": "^3.6.4",
     "flickity": "^2.2.1",
     "kind-of": "^6.0.3",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "minimist": "^1.2.5",
     "serialize-javascript": "^2.1.2",
     "velocity-animate": "^1.5.2",
