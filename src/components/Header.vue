@@ -34,7 +34,7 @@
             <span class="equalSign">= </span>
             <span class="bracket">[ </span>
             <span class="values"
-              >'HTML', 'CSS', 'Javascript', 'VueJS', 'React' ...
+              >'HTML', 'CSS', 'Javascript', 'VueJS', 'PHP' ...
             </span>
             <span class="bracket">]</span>
           </p>

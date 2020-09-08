@@ -1,5 +1,5 @@
 <template>
-  <div class="skills columns is-centered is-multiline">
+  <div class="skills columns is-multiline">
     <div
       v-for="skillSet in skillList"
       :key="skillSet.id"
@@ -28,11 +28,11 @@ export default {
             { name: 'HTML5', level: 4 },
             { name: 'CSS3', level: 4 },
             { name: 'SASS/SCSS', level: 4 },
-            { name: 'Bulma', level: 4 },
             { name: 'Flexbox', level: 4 },
-            { name: 'Bootstrap', level: 3 },
+            { name: 'Bootstrap', level: 4 },
+            { name: 'Bulma', level: 4 },
             { name: 'CSS Grid', level: 3 },
-            { name: 'Canvas', level: 2 }
+            { name: 'Canvas', level: 1 }
           ]
         },
         {
@@ -43,10 +43,8 @@ export default {
             { name: 'Vuex', level: 4 },
             { name: 'Axios', level: 3 },
             { name: 'Javascript | ES6', level: 3 },
-            { name: 'React', level: 3 },
-            { name: 'NodeJS', level: 2 },
-            { name: 'Express', level: 2 },
-            { name: 'Redux', level: 2 }
+            { name: 'React', level: 2 },
+            { name: 'NodeJS', level: 1 }
           ]
         },
         {
@@ -54,20 +52,18 @@ export default {
           title: 'PHP7',
           skills: [
             { name: 'Laravel', level: 3 },
-            { name: 'PHP7', level: 2 }
+            { name: 'PHP7', level: 3 }
           ]
         },
         {
           id: 4,
           title: 'Tools',
           skills: [
-            { name: 'Visual Studios', level: 4 },
-            { name: 'PhpStorm', level: 4 },
-            { name: 'Sublime', level: 4 },
             { name: 'Git | Github', level: 4 },
             { name: 'Postman', level: 3 },
             { name: 'iterm/ Terminal', level: 3 },
-            { name: 'Photoshop', level: 2 }
+            { name: 'Photoshop', level: 3 },
+            { name: 'Illustrator', level: 1 }
           ]
         },
         {
@@ -76,21 +72,28 @@ export default {
           skills: [
             { name: 'MySQL', level: 2 },
             { name: 'Sequelize', level: 2 },
-            { name: 'MongoDB', level: 2 },
-            { name: 'Mongoose', level: 2 },
-            { name: 'MongoDB Compass', level: 2 },
             { name: 'Sequel Pro', level: 2 },
-            { name: 'MySQL Workbench', level: 2 }
+            { name: 'MongoDB', level: 1 },
+            { name: 'Mongoose', level: 1 },
+            { name: 'MongoDB Compass', level: 1 },
           ]
         },
         {
           id: 6,
           title: 'Methodologies',
           skills: [
-            { name: 'RWD', level: 3 },
+            { name: 'RWD', level: 4 },
             { name: 'MVC', level: 2 },
             { name: 'AJAX', level: 2 },
             { name: 'RESTFUL API', level: 2 }
+          ]
+        },
+        {
+          id: 7,
+          title: 'CMS',
+          skills: [
+            { name: 'Wordpress', level: 4 },
+            { name: 'Shopify', level: 2 }
           ]
         }
       ]

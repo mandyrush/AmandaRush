@@ -12,7 +12,7 @@
           I spend my days sipping coffee, writing code and bending to the will
           of my three furry felines. In my spare time I love to go on adventures
           with my husband and fellow developer Des, try out a new climbing wall
-          or grab a drink with friends."
+          or spend time with friends."
         </p>
       </div>
     </div>
@@ -21,13 +21,12 @@
 
     <div class="solid-block-two content-section">
       <div class="content">
-        <h2 class="title is-2">Previous Experience</h2>
+        <h2 class="title is-2">Current Projects</h2>
         <p>
-          "I'm currently working on a few freelance projects and until recently
-          I also worked remotely for a company in North Carolina on the frontend
-          of a redesign. Now that my share of the project has come to
-          completion, I am excited to explore new opportunities where I can
-          continue to learn and grow."
+          “My day to day work is currently focused on creating custom Wordpress
+          themes that are fully responsive and customizable for our clients. In
+          my spare time my recent focus has been on projects built using PHP,
+          VueJS, and Javascript.”
         </p>
       </div>
     </div>
