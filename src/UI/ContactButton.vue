@@ -5,3 +5,11 @@
     </a>
   </div>
 </template>
+
+<style lang="scss" scoped>
+  @import '../assets/sass/main.scss';
+
+  .buttons {
+    margin-top: 2rem;
+  }
+</style>

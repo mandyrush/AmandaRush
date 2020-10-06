@@ -5,15 +5,18 @@
     <main>
       <router-view />
     </main>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 export default {
   components: {
-    Navigation
+    Navigation,
+    Footer
   }
 }
 </script>
@@ -24,6 +27,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: $dark;
   min-height: 100vh;
+  background: $dark;
 }
 main {
   height: 100%;

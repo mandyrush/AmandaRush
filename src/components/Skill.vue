@@ -35,6 +35,8 @@ export default {
 .box {
   height: 100%;
   background-color: $dark;
+  box-shadow: 8px 8px 6px rgba(0,0,0,0.5), -2px -2px 3px rgba(0,0,0,0.1);
+
 }
 .box h4 {
   color: $pink;

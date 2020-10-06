@@ -44,23 +44,10 @@
           Please check out my links above and feel free to send me a message if
           you would like to talk more about my work. I'd love to hear from you!"
         </p>
-        <div class="contact-btn">
-          <ContactButton />
-        </div>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-import ContactButton from '../UI/ContactButton'
-
-export default {
-  components: {
-    ContactButton
-  }
-}
-</script>
 
 <style lang="scss" scoped>
 @import '../assets/sass/main.scss';

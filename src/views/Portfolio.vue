@@ -4,7 +4,7 @@
       <div
         v-for="card in cards"
         :key="card.id"
-        class="column is-4-desktop is-6-tablet is-12-mobile"
+        class="column is-6-desktop is-6-tablet is-12-mobile"
       >
         <a
           :href="card.link"
@@ -62,17 +62,17 @@ export default {
         },
         {
           id: 5,
+          title: 'Range',
+          imageSrc: require('../../public/range.jpg'),
+          imageAlt: 'range.net',
+          link: 'https://www.range.net/'
+        },
+        {
+          id: 6,
           title: 'Oakland Companies',
           imageSrc: require('../../public/oakland_companies.jpg'),
           imageAlt: 'oaklandcompanies.com',
           link: 'https://www.oaklandcompanies.com/'
-        },
-        {
-          id: 6,
-          title: 'Blue Bow Fashion',
-          imageSrc: require('../../public/blue_bow.jpg'),
-          imageAlt: 'bluebowfashion.com',
-          link: 'http://bluebowfashion.com/'
         },
         {
           id: 7,
@@ -83,16 +83,16 @@ export default {
         },
         {
           id: 8,
-          title: 'Express Labs (Coming soon)',
-          imageSrc: require('../../public/express_labs.jpg'),
-          imageAlt: 'Express Labs website in development',
-          link: null
+          title: 'Blue Bow Fashion',
+          imageSrc: require('../../public/blue_bow.jpg'),
+          imageAlt: 'bluebowfashion.com',
+          link: 'http://bluebowfashion.com/'
         },
         {
           id: 9,
-          title: 'Hammond Visual Media (Coming soon)',
-          imageSrc: require('../../public/hammond_visual_media.jpg'),
-          imageAlt: 'Hammond Visual Media website in development',
+          title: 'Express Labs (Coming soon)',
+          imageSrc: require('../../public/express_labs.jpg'),
+          imageAlt: 'Express Labs website in development',
           link: null
         }
       ]

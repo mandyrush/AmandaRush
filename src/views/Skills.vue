@@ -1,11 +1,13 @@
 <template>
-  <div class="skills columns is-multiline">
-    <div
-      v-for="skillSet in skillList"
-      :key="skillSet.id"
-      class="column is-12-mobile is-6-desktop is-4-widescreen"
-    >
-      <Skill :skillSet="skillSet" />
+  <div class="skills">
+    <div class="columns is-multiline">
+      <div
+        v-for="skillSet in skillList"
+        :key="skillSet.id"
+        class="column is-12-mobile is-6-desktop is-4-widescreen"
+      >
+        <Skill :skillSet="skillSet" />
+      </div>
     </div>
   </div>
 </template>
@@ -43,8 +45,7 @@ export default {
             { name: 'Vuex', level: 4 },
             { name: 'Axios', level: 3 },
             { name: 'Javascript | ES6', level: 3 },
-            { name: 'React', level: 2 },
-            { name: 'NodeJS', level: 1 }
+            { name: 'React', level: 1 }
           ]
         },
         {
@@ -72,10 +73,7 @@ export default {
           skills: [
             { name: 'MySQL', level: 2 },
             { name: 'Sequelize', level: 2 },
-            { name: 'Sequel Pro', level: 2 },
-            { name: 'MongoDB', level: 1 },
-            { name: 'Mongoose', level: 1 },
-            { name: 'MongoDB Compass', level: 1 },
+            { name: 'Sequel Pro', level: 2 }
           ]
         },
         {
