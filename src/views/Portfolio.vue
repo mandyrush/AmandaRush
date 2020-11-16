@@ -34,10 +34,10 @@ export default {
       cards: [
         {
           id: 1,
-          title: 'Capstone Wealth Management',
-          imageSrc: require('../../public/capstone_retire.jpg'),
-          imageAlt: 'capstoneretire.com',
-          link: 'https://www.capstoneretire.com/'
+          title: 'Range',
+          imageSrc: require('../../public/range.jpg'),
+          imageAlt: 'range.net',
+          link: 'https://www.range.net/'
         },
         {
           id: 2,
@@ -48,10 +48,10 @@ export default {
         },
         {
           id: 3,
-          title: 'Raisin Contracting',
-          imageSrc: require('../../public/raisin_contracting.jpg'),
-          imageAlt: 'raisincontracting.com',
-          link: 'http://raisincontracting.com/'
+          title: 'Capstone Wealth Management',
+          imageSrc: require('../../public/capstone_retire.jpg'),
+          imageAlt: 'capstoneretire.com',
+          link: 'https://www.capstoneretire.com/'
         },
         {
           id: 4,
@@ -62,10 +62,10 @@ export default {
         },
         {
           id: 5,
-          title: 'Range',
-          imageSrc: require('../../public/range.jpg'),
-          imageAlt: 'range.net',
-          link: 'https://www.range.net/'
+          title: 'Raisin Contracting',
+          imageSrc: require('../../public/raisin_contracting.jpg'),
+          imageAlt: 'raisincontracting.com',
+          link: 'http://raisincontracting.com/'
         },
         {
           id: 6,
@@ -76,20 +76,27 @@ export default {
         },
         {
           id: 7,
+          title: 'Bridges Education and Wellness Center',
+          imageSrc: require('../../public/bridgesmt.jpg'),
+          imageAlt: 'bridgesmt.org',
+          link: 'https://www.bridgesmt.org/'
+        },
+        {
+          id: 8,
           title: 'Cats Wander',
           imageSrc: require('../../public/cats_wander.jpg'),
           imageAlt: 'catswander.com',
           link: 'http://catswander.com/'
         },
         {
-          id: 8,
+          id: 9,
           title: 'Blue Bow Fashion',
           imageSrc: require('../../public/blue_bow.jpg'),
           imageAlt: 'bluebowfashion.com',
           link: 'http://bluebowfashion.com/'
         },
         {
-          id: 9,
+          id: 10,
           title: 'Express Labs (Coming soon)',
           imageSrc: require('../../public/express_labs.jpg'),
           imageAlt: 'Express Labs website in development',
