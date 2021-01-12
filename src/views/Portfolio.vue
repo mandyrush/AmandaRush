@@ -4,7 +4,7 @@
       <div
         v-for="card in cards"
         :key="card.id"
-        class="column is-6-desktop is-6-tablet is-12-mobile"
+        class="column is-4-desktop is-6-tablet is-12-mobile"
       >
         <a
           :href="card.link"
@@ -81,13 +81,13 @@ export default {
           imageAlt: 'bridgesmt.org',
           link: 'https://www.bridgesmt.org/'
         },
-        {
-          id: 8,
-          title: 'Cats Wander',
-          imageSrc: require('../../public/cats_wander.jpg'),
-          imageAlt: 'catswander.com',
-          link: 'http://catswander.com/'
-        },
+        // {
+        //   id: 8,
+        //   title: 'Cats Wander',
+        //   imageSrc: require('../../public/cats_wander.jpg'),
+        //   imageAlt: 'catswander.com',
+        //   link: 'http://catswander.com/'
+        // },
         {
           id: 9,
           title: 'Blue Bow Fashion',
@@ -95,12 +95,40 @@ export default {
           imageAlt: 'bluebowfashion.com',
           link: 'http://bluebowfashion.com/'
         },
+        // {
+        //   id: 10,
+        //   title: 'Express Labs (Coming soon)',
+        //   imageSrc: require('../../public/express_labs.jpg'),
+        //   imageAlt: 'Express Labs website in development',
+        //   link: null
+        // },
         {
-          id: 10,
-          title: 'Express Labs (Coming soon)',
-          imageSrc: require('../../public/express_labs.jpg'),
-          imageAlt: 'Express Labs website in development',
-          link: null
+          id: 11,
+          title: 'Mountain Wave Distilling',
+          imageSrc: require('../../public/mountain_wave_distilling.jpg'),
+          imageAlt: 'mountainwavedistilling.com',
+          link: 'https://mountainwavedistilling.com/'
+        },
+        {
+          id: 12,
+          title: 'Verhaeghe Benefits',
+          imageSrc: require('../../public/verhaeghe_benefits.jpg'),
+          imageAlt: 'verhaeghebenefits.com',
+          link: 'https://www.verhaeghebenefits.com/'
+        },
+        {
+          id: 13,
+          title: 'Copper Ridge West',
+          imageSrc: require('../../public/copper_ridge_west.jpg'),
+          imageAlt: 'copperridgewest.com',
+          link: 'https://copperridgewest.com/'
+        },
+        {
+          id: 14,
+          title: 'Highland Meadows',
+          imageSrc: require('../../public/highland_meadows_mt.jpg'),
+          imageAlt: 'highlandmeadowsmt.com',
+          link: 'https://highlandmeadowsmt.com/'
         }
       ]
     }

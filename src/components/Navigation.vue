@@ -1,6 +1,9 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
+      <router-link :to="{ name: 'home' }" class="navbar-item">
+        <i class="fas fa-home"></i>
+      </router-link>
       <a
         role="button"
         :class="
@@ -21,10 +24,6 @@
 
     <div :class="menuIsVisible ? 'is-active navbar-menu' : 'navbar-menu'">
       <div class="navbar-start">
-        <router-link :to="{ name: 'home' }" class="navbar-item">
-          <i class="fas fa-home"></i>
-        </router-link>
-
         <router-link :to="{ name: 'about' }" class="navbar-item">
           About
         </router-link>
@@ -80,7 +79,7 @@ export default {
 .navbar {
   background-color: $pink;
 }
-.navbar-menu {
+.navbar {
   a {
     font-weight: bold;
     color: $white;
@@ -88,6 +87,9 @@ export default {
   a:hover,
   a:focus {
     color: $pink;
+  }
+  a.navbar-item:hover {
+    background-color: $white;
   }
 }
 .navbar-menu.is-active {

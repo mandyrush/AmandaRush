@@ -42,9 +42,9 @@ export default {
           title: 'Javascript',
           skills: [
             { name: 'Vue', level: 4 },
-            { name: 'Vuex', level: 4 },
-            { name: 'Axios', level: 3 },
+            { name: 'Vuex', level: 3 },
             { name: 'Javascript | ES6', level: 3 },
+            { name: 'Nuxt', level: 1 },
             { name: 'React', level: 1 }
           ]
         },
