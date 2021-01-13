@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Skill from '../components/Skill'
+import Skill from './Skill'
 
 export default {
   name: 'Skills',
@@ -104,7 +104,8 @@ export default {
 .skills {
   height: 100%;
   max-width: 1500px;
-  margin: 3rem auto;
+  margin: 3rem auto 0 auto;
+  padding: 0 2rem;
 }
 
 @media (max-width: 1025px) {

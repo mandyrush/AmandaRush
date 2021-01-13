@@ -1,42 +1,42 @@
 <template>
-<!--  <article class="current-learning content">-->
-<!--    &lt;!&ndash;    <h4 class="title is-3">Look What I'm Learning!</h4>&ndash;&gt;-->
-<!--    <div class="columns is-centered learning-list">-->
-<!--      <div class="column is-2 learning-items">-->
-<!--        <i class="fab fa-js-square"></i>-->
-<!--      </div>-->
+  <!--  <article class="current-learning content">-->
+  <!--    &lt;!&ndash;    <h4 class="title is-3">Look What I'm Learning!</h4>&ndash;&gt;-->
+  <!--    <div class="columns is-centered learning-list">-->
+  <!--      <div class="column is-2 learning-items">-->
+  <!--        <i class="fab fa-js-square"></i>-->
+  <!--      </div>-->
 
-<!--      <div class="column is-2 learning-items">-->
-<!--        <i class="fab fa-vuejs"></i>-->
-<!--      </div>-->
+  <!--      <div class="column is-2 learning-items">-->
+  <!--        <i class="fab fa-vuejs"></i>-->
+  <!--      </div>-->
 
-<!--      <div class="column is-2 learning-items">-->
-<!--        <i class="fab fa-php"></i>-->
-<!--      </div>-->
+  <!--      <div class="column is-2 learning-items">-->
+  <!--        <i class="fab fa-php"></i>-->
+  <!--      </div>-->
 
-<!--      <div class="column is-2 learning-items">-->
-<!--        <i class="fab fa-react"></i>-->
-<!--      </div>-->
+  <!--      <div class="column is-2 learning-items">-->
+  <!--        <i class="fab fa-react"></i>-->
+  <!--      </div>-->
 
-<!--      <div class="column is-2 learning-items">-->
-<!--        <i class="fab fa-wordpress"></i>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <ContactButton />-->
-<!--  </article>-->
+  <!--      <div class="column is-2 learning-items">-->
+  <!--        <i class="fab fa-wordpress"></i>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--    <ContactButton />-->
+  <!--  </article>-->
   <footer>
     <div class="social-icons">
       <a
-          href="https://github.com/mandyrush"
-          target="_blank"
-          class="footer-item media-link"
+        href="https://github.com/mandyrush"
+        target="_blank"
+        class="footer-item media-link"
       >
         <i class="fab fa-github"></i>
       </a>
       <a
-          href="https://linkedin.com/in/amanda-rush"
-          target="_blank"
-          class="footer-item media-link"
+        href="https://linkedin.com/in/amanda-rush"
+        target="_blank"
+        class="footer-item media-link"
       >
         <i class="fab fa-linkedin"></i>
       </a>

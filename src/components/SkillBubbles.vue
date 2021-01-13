@@ -41,10 +41,21 @@ export default {
           this.colorBubble(i)
         }
       }, 500)
+    },
+    signalColorBubbles() {
+      let skills = document.querySelector('#skills')
+      let skillsPosition = skills.offsetTop
+      if (window.scrollY >= skillsPosition - 500) {
+        this.colorBubble(5)
+      } else {
+        this.bubbles.forEach(bubble => {
+          bubble.colored = false
+        })
+      }
     }
   },
-  mounted() {
-    this.colorBubble(5)
+  created() {
+    window.addEventListener('scroll', this.signalColorBubbles)
   }
 }
 </script>

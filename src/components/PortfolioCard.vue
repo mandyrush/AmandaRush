@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-image">
       <figure class="image">
-        <img :src="card.imageSrc" :alt="card.imageAlt" :title="card.imageAlt" />
+        <img :src="card.imageSrc" :alt="card.imageAlt" :title="card.imageAlt" class="" />
       </figure>
     </div>
   </div>
@@ -29,5 +29,8 @@ export default {
 }
 .card img:hover {
   filter: none;
+}
+.content figure {
+  margin: 0;
 }
 </style>

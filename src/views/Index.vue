@@ -1,22 +1,18 @@
 <template>
-  <div class="home">
+  <div>
     <Header />
+    <Parallax />
   </div>
 </template>
 
 <script>
 import Header from '../components/Header'
+import Parallax from '../components/Parallax'
 
 export default {
   components: {
-    Header
+    Header,
+    Parallax
   }
 }
 </script>
-
-<style lang="scss" scoped>
-@import '../assets/sass/main.scss';
-.home {
-  background-color: $dark;
-}
-</style>

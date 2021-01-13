@@ -1,9 +1,6 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <router-link :to="{ name: 'home' }" class="navbar-item">
-        <i class="fas fa-home"></i>
-      </router-link>
       <a
         role="button"
         :class="
@@ -24,17 +21,28 @@
 
     <div :class="menuIsVisible ? 'is-active navbar-menu' : 'navbar-menu'">
       <div class="navbar-start">
-        <router-link :to="{ name: 'about' }" class="navbar-item">
-          About
-        </router-link>
 
-        <router-link :to="{ name: 'skills' }" class="navbar-item">
+        <a href="#employment"
+           class="navbar-item"
+           @click.prevent="smoothScrollTo('#employment')">
+          Employment
+        </a>
+
+        <a
+          href="#skills"
+          class="navbar-item"
+          @click.prevent="smoothScrollTo('#skills')"
+        >
           Skills
-        </router-link>
+        </a>
 
-        <router-link :to="{ name: 'portfolio' }" class="navbar-item">
+        <a
+          href="#portfolio"
+          class="navbar-item"
+          @click.prevent="smoothScrollTo('#portfolio')"
+        >
           Portfolio
-        </router-link>
+        </a>
       </div>
       <div class="navbar-end">
         <a
@@ -69,6 +77,10 @@ export default {
   methods: {
     toggleMenu() {
       this.menuIsVisible = !this.menuIsVisible
+    },
+    smoothScrollTo(scrollTo) {
+      let el = document.querySelector(scrollTo)
+      el.scrollIntoView({ behavior: 'smooth' })
     }
   }
 }
@@ -90,6 +102,11 @@ export default {
   }
   a.navbar-item:hover {
     background-color: $white;
+    color: $pink;
+  }
+  .navbar-brand a.navbar-item:focus {
+    color: $white;
+    background-color: $pink;
   }
 }
 .navbar-menu.is-active {

@@ -79,7 +79,7 @@ export default {
 @import '../assets/sass/main.scss';
 
 article {
-  padding: 3rem 5rem;
+  padding: 5rem;
   background-color: $dark;
   border-bottom: 15px solid $white;
 }

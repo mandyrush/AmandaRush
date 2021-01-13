@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import PortfolioCard from '../components/PortfolioCard'
+import PortfolioCard from './PortfolioCard'
 
 export default {
   name: 'Portfolio',
@@ -137,10 +137,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/sass/main.scss';
+@import '../assets/sass/main';
 .portfolio {
-  padding: 0;
-  background-color: $dark;
+  padding: 2rem 0 0 0;
+  background-color: $pink;
   min-height: 100vh;
   width: 100%;
 }
@@ -155,7 +155,7 @@ export default {
 }
 @media (max-width: 1025px) {
   .portfolio {
-    padding: 1rem;
+    //padding: 1rem;
   }
   .column {
     margin-bottom: 0;
