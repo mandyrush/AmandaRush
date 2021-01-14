@@ -25,7 +25,7 @@
         <a href="#employment"
            class="navbar-item"
            @click.prevent="smoothScrollTo('#employment')">
-          Employment
+          Experience
         </a>
 
         <a

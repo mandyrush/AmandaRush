@@ -21,6 +21,7 @@
     </div>
 
     <div class="parallax parallax-one">
+      <div class="parallax-gradient"></div>
       <div class="img-text">
         <h3>I am a front-end web developer with a passion for technology, learning and creating.</h3>
       </div>
@@ -34,6 +35,7 @@
     </div>
 
     <div class="parallax parallax-two">
+      <div class="parallax-gradient"></div>
       <div class="img-text">
         <h3>"I spend my days sipping coffee, writing code and bending to the will of my three furry felines."</h3>
       </div>
@@ -47,6 +49,7 @@
     </div>
 
     <div class="parallax parallax-three">
+      <div class="parallax-gradient"></div>
       <div class="img-text">
         <h3>"I love to learn and enjoy tackling new concepts."</h3>
       </div>
@@ -85,11 +88,17 @@ export default {
 }
 .parallax {
   position: relative;
+  height: 500px;
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.parallax-gradient {
+  width: 100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.5);
 }
 .parallax-one {
   background-image: url('../../public/prague.jpg');
@@ -104,11 +113,10 @@ export default {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 1rem 3rem;
-  background-color: rgba(0,0,0,0.4);
   h3 {
     font-size: 1.85rem;
     color: $white;
@@ -164,17 +172,23 @@ export default {
 .contact-btn {
   margin: 2rem 0;
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 760px) {
   .parallax {
     background-attachment: scroll;
   }
 }
 @media (max-width: 1200px) {
   .content-section {
-    //padding: 1rem;
     p {
       font-size: 1.5rem;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .img-text {
+    width: 50%;
   }
 }
 </style>

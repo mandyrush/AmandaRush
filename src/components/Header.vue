@@ -2,7 +2,7 @@
   <article class="columns is-centered is-vcentered is-marginless">
     <div class="column is-12-mobile is-4-desktop is-3-widescreen">
       <figure class="full-img image">
-        <img src="../../public/amandaPic.jpg" alt="Image of Amanda" />
+        <img src="../../public/amandaPic.jpg" alt="Image of Amanda" fluid />
       </figure>
     </div>
 
@@ -34,7 +34,7 @@
             <span class="equalSign">= </span>
             <span class="bracket">[ </span>
             <span class="values"
-              >'HTML', 'CSS', 'Javascript', 'VueJS', 'PHP' ...
+              >'HTML', 'CSS', 'Javascript', 'Vue', 'PHP' ...
             </span>
             <span class="bracket">]</span>
           </p>
@@ -50,7 +50,7 @@ export default {
     return {
       nameArray: ['A', 'M', 'A', 'N', 'D', 'A', '_', 'R', 'U', 'S', 'H'],
       name: '',
-      isMobile: window.innerWidth < 1025
+      isMobile: window.innerWidth < 768
     }
   },
   methods: {
@@ -86,12 +86,11 @@ article {
 
 .full-img {
   width: 100%;
-  max-width: 400px;
+
   margin: auto;
   img {
     box-shadow: 5px 5px 8px black;
-    width: 100%;
-    height: auto;
+    max-width: 400px;
     margin: auto;
   }
 }
@@ -157,6 +156,15 @@ article {
   color: $yellow;
 }
 
+@media (max-width: 760px) {
+  .cursor {
+    display: none;
+  }
+  .fade-enter-active {
+    transition: opacity 0.5s ease-in 1s;
+  }
+}
+
 @media (max-width: 1025px) {
   article {
     padding: 3rem 0;
@@ -168,12 +176,6 @@ article {
     .name {
       width: 100%;
     }
-  }
-  .cursor {
-    display: none;
-  }
-  .fade-enter-active {
-    transition: opacity 0.5s ease-in 1s;
   }
 }
 </style>

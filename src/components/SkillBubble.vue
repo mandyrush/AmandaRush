@@ -23,7 +23,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/sass/main.scss';
 .skill-bubble {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   border: 1px solid $purple;
   border-radius: 50%;
   height: 15px;
@@ -40,5 +40,11 @@ export default {
 
 .fade-enter-active {
   transition: opacity 0.5s ease-in;
+}
+
+@media (min-width: 768px) {
+  .skill-bubble {
+    margin-right: 1rem;
+  }
 }
 </style>

@@ -4,7 +4,7 @@
       <div
         v-for="skillSet in skillList"
         :key="skillSet.id"
-        class="column is-12-mobile is-6-desktop is-4-widescreen"
+        class="column is-6-desktop is-4-widescreen"
       >
         <Skill :skillSet="skillSet" />
       </div>
@@ -30,11 +30,8 @@ export default {
             { name: 'HTML5', level: 4 },
             { name: 'CSS3', level: 4 },
             { name: 'SASS/SCSS', level: 4 },
-            { name: 'Flexbox', level: 4 },
             { name: 'Bootstrap', level: 4 },
-            { name: 'Bulma', level: 4 },
-            { name: 'CSS Grid', level: 3 },
-            { name: 'Canvas', level: 1 }
+            { name: 'Bulma', level: 3 }
           ]
         },
         {
@@ -42,8 +39,8 @@ export default {
           title: 'Javascript',
           skills: [
             { name: 'Vue', level: 4 },
-            { name: 'Vuex', level: 3 },
             { name: 'Javascript | ES6', level: 3 },
+            { name: 'Vuex', level: 2 },
             { name: 'Nuxt', level: 1 },
             { name: 'React', level: 1 }
           ]
@@ -52,8 +49,8 @@ export default {
           id: 3,
           title: 'PHP7',
           skills: [
-            { name: 'Laravel', level: 3 },
-            { name: 'PHP7', level: 3 }
+            { name: 'PHP7', level: 3 },
+            { name: 'Laravel', level: 2 }
           ]
         },
         {
@@ -72,8 +69,6 @@ export default {
           title: 'Database',
           skills: [
             { name: 'MySQL', level: 2 },
-            { name: 'Sequelize', level: 2 },
-            { name: 'Sequel Pro', level: 2 }
           ]
         },
         {
@@ -90,8 +85,7 @@ export default {
           id: 7,
           title: 'CMS',
           skills: [
-            { name: 'Wordpress', level: 4 },
-            { name: 'Shopify', level: 2 }
+            { name: 'Wordpress', level: 4 }
           ]
         }
       ]
@@ -104,14 +98,20 @@ export default {
 .skills {
   height: 100%;
   max-width: 1500px;
-  margin: 3rem auto 0 auto;
-  padding: 0 2rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1025px) {
   .skills,
   .columns:last-child {
     margin: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .skills {
+    padding: 0 2rem;
   }
 }
 </style>
