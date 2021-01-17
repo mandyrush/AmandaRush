@@ -27,6 +27,9 @@ export default {
     filter: grayscale(100%);
   }
 }
+.content figure img {
+  display: block;
+}
 .card img:hover {
   filter: none;
 }

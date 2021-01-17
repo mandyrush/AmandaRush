@@ -141,7 +141,6 @@ export default {
 .portfolio {
   padding: 2rem 0 0 0;
   background-color: $pink;
-  min-height: 100vh;
   width: 100%;
 }
 .card-group {
@@ -149,16 +148,5 @@ export default {
   width: 100%;
   max-width: 1500px;
   margin: auto;
-}
-.column {
-  margin-bottom: 2rem;
-}
-@media (max-width: 1025px) {
-  .portfolio {
-    //padding: 1rem;
-  }
-  .column {
-    margin-bottom: 0;
-  }
 }
 </style>

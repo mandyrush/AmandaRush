@@ -18,3 +18,19 @@ $yellow: #FBD765;
 $green: #A9DC76;
 $blue: #78DCE7;
 $purple: #AA9DF2;
+
+//Buttons
+.btn.btn-primary {
+  background-color: $pink;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: .25rem;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  background-color: #ea628b;
+}

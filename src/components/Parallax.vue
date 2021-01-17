@@ -1,14 +1,9 @@
 <template>
   <div class="parallax-container">
-    <div id="contact" class="solid-block-one content-section">
+    <div class="solid-block-one content-section">
       <div class="content">
-        <div class="down-arrow">
-          <a href="#employment" @click.prevent="smoothScrollTo('#employment')">
-            <span class="fa-stack fa-2x">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fas fa-chevron-down fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
+        <div class="resume-statement">
+          <h3>I am a Front End Developer with 3+ years experience building and maintaining responsive mobile first websites. I am proficient in HTML, CSS, Javascript and Vue. </h3>
         </div>
       </div>
     </div>
@@ -79,8 +74,15 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/sass/main';
-.down-arrow .fa-circle {
-  color: rgba(247,247,247,0.5);
+.resume-statement {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 3rem;
+  margin: auto;
+  h3 {
+    font-size: 1.85rem;
+    color: $white;
+  }
 }
 
 .parallax-container {
@@ -101,13 +103,13 @@ export default {
   background-color: rgba(0,0,0,0.5);
 }
 .parallax-one {
-  background-image: url('../../public/prague.jpg');
+  background-image: url('../../public/prague_mobile.jpg');
 }
 .parallax-two {
-  background-image: url('../../public/croatia.jpg');
+  background-image: url('../../public/croatia_mobile.jpg');
 }
 .parallax-three {
-  background-image: url('../../public/burano.jpg');
+  background-image: url('../../public/burano_mobile.jpg');
 }
 .img-text {
   position: absolute;
@@ -126,16 +128,16 @@ export default {
 .solid-block-one {
   background-color: $blue;
   color: $white;
-  h2 {
+  h3 {
     color: $white;
   }
 }
 .solid-block-two {
   background-color: $blue;
-  border-top: 5px solid $white;
-  border-bottom: 5px solid $white;
+  //border-top: 5px solid $white;
+  //border-bottom: 5px solid $white;
   h2 {
-    color: $dark;
+    color: $white;
   }
 }
 .solid-block-three {
@@ -169,13 +171,25 @@ export default {
     text-align: center;
   }
 }
-.contact-btn {
-  margin: 2rem 0;
+
+.solid-block-one.content-section {
+  padding: 3rem 0;
 }
 
 @media (max-width: 760px) {
   .parallax {
     background-attachment: scroll;
+  }
+}
+@media (min-width: 768px) {
+  .parallax-one {
+    background-image: url('../../public/prague.jpg');
+  }
+  .parallax-two {
+    background-image: url('../../public/croatia.jpg');
+  }
+  .parallax-three {
+    background-image: url('../../public/burano.jpg');
   }
 }
 @media (max-width: 1200px) {
@@ -187,6 +201,9 @@ export default {
 }
 
 @media (min-width: 992px) {
+  .resume-statement {
+    width: 75%;
+  }
   .img-text {
     width: 50%;
   }

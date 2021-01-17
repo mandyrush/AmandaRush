@@ -12,6 +12,9 @@
           <p>{{ position.summary }}</p>
         </div>
       </div>
+      <div class="download-resume has-text-centered">
+        <a href="./amanda_rush_resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download Resume</a>
+      </div>
     </div>
   </div>
 </template>
@@ -26,7 +29,7 @@ export default {
           company: 'AD Creative Group',
           location: 'Billings, MT',
           dates: 'Mar 2020 - Current',
-          summary: 'In this role I create custom Wordpress themes for our clients which leverage PHP, Javascript and Bootstrap to create fully functional and responsive websites. I am also responsible for updating and maintaining a number of websites on a monthly basis.'
+          summary: 'In this role I leverage PHP, Javascript and Bootstrap to create custom Wordpress themes for our clients which are fully functional and responsive. I am also responsible for updating and maintaining a number of websites on a monthly basis.'
         },
         {
           title: 'FRONT-END WEB DEVELOPER',
@@ -38,10 +41,10 @@ export default {
         },
         {
           title: 'FREELANCE WEB DEVELOPER',
-          company: 'Self',
+          company: 'Freelance',
           location: '(Remote)',
           dates: 'Jul 2017 - Feb 2019',
-          summary: 'I created and maintained catswander.com and bluebowfashion.com. Both sites were built with Laravel and PHP. Catswander.com also Includes Bootstrap and uses a MySQL database. It features a mosaic styled image gallery, blog posts, user registration and login as well as user comments. Bluebowfashion.com includes Vue along with some Javascript. It was also built to be fully responsive and includes a contact form with validation and Bulma as the css framework.'
+          summary: 'I created and maintained fully responsive websites using PHP, Vue, Laravel and Javascript, along with Bootstrap and MySQL.'
         }
       ]
     }
@@ -58,5 +61,9 @@ export default {
 
 .position-title {
  color: $pink;
+}
+
+.download-resume {
+  margin-top: 3rem;
 }
 </style>
