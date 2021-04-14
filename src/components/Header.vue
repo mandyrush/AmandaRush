@@ -89,8 +89,9 @@ article {
 
   margin: auto;
   img {
-    box-shadow: 5px 5px 8px black;
-    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
+    max-width: 250px;
     margin: auto;
   }
 }

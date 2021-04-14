@@ -4,7 +4,7 @@
       <div
         v-for="card in cards"
         :key="card.id"
-        class="column is-4-desktop is-6-tablet is-12-mobile"
+        class="column is-6-desktop is-6-tablet is-12-mobile"
       >
         <a
           :href="card.link"
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import PortfolioCard from './PortfolioCard'
+import PortfolioCard from '../components/PortfolioCard'
 
 export default {
   name: 'Portfolio',
@@ -54,20 +54,6 @@ export default {
           link: 'https://www.capstoneretire.com/'
         },
         {
-          id: 15,
-          title: 'Great Falls Clinic',
-          imageSrc: require('../../public/gfclinic.jpg'),
-          imageAlt: 'gfclinic.com',
-          link: 'https://www.gfclinic.com/'
-        },
-        {
-          id: 16,
-          title: 'Raise Them Right',
-          imageSrc: require('../../public/raise_right.jpg'),
-          imageAlt: 'raiseright.org',
-          link: 'https://www.raiseright.org//'
-        },
-        {
           id: 4,
           title: 'Profitable Ideas - Never Say Sell',
           imageSrc: require('../../public/profitable_ideas_neversaysell.jpg'),
@@ -95,13 +81,13 @@ export default {
           imageAlt: 'bridgesmt.org',
           link: 'https://www.bridgesmt.org/'
         },
-        // {
-        //   id: 8,
-        //   title: 'Cats Wander',
-        //   imageSrc: require('../../public/cats_wander.jpg'),
-        //   imageAlt: 'catswander.com',
-        //   link: 'http://catswander.com/'
-        // },
+        {
+          id: 8,
+          title: 'Cats Wander',
+          imageSrc: require('../../public/cats_wander.jpg'),
+          imageAlt: 'catswander.com',
+          link: 'http://catswander.com/'
+        },
         {
           id: 9,
           title: 'Blue Bow Fashion',
@@ -109,40 +95,12 @@ export default {
           imageAlt: 'bluebowfashion.com',
           link: 'http://bluebowfashion.com/'
         },
-        // {
-        //   id: 10,
-        //   title: 'Express Labs (Coming soon)',
-        //   imageSrc: require('../../public/express_labs.jpg'),
-        //   imageAlt: 'Express Labs website in development',
-        //   link: null
-        // },
         {
-          id: 11,
-          title: 'Mountain Wave Distilling',
-          imageSrc: require('../../public/mountain_wave_distilling.jpg'),
-          imageAlt: 'mountainwavedistilling.com',
-          link: 'https://mountainwavedistilling.com/'
-        },
-        {
-          id: 12,
-          title: 'Verhaeghe Benefits',
-          imageSrc: require('../../public/verhaeghe_benefits.jpg'),
-          imageAlt: 'verhaeghebenefits.com',
-          link: 'https://www.verhaeghebenefits.com/'
-        },
-        {
-          id: 13,
-          title: 'Copper Ridge West',
-          imageSrc: require('../../public/copper_ridge_west.jpg'),
-          imageAlt: 'copperridgewest.com',
-          link: 'https://copperridgewest.com/'
-        },
-        {
-          id: 14,
-          title: 'Highland Meadows',
-          imageSrc: require('../../public/highland_meadows_mt.jpg'),
-          imageAlt: 'highlandmeadowsmt.com',
-          link: 'https://highlandmeadowsmt.com/'
+          id: 10,
+          title: 'Express Labs (Coming soon)',
+          imageSrc: require('../../public/express_labs.jpg'),
+          imageAlt: 'Express Labs website in development',
+          link: null
         }
       ]
     }
@@ -151,10 +109,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/sass/main';
+@import '../assets/sass/main.scss';
 .portfolio {
-  padding: 2rem 0 0 0;
-  background-color: $pink;
+  padding: 0;
+  background-color: $dark;
+  min-height: 100vh;
   width: 100%;
 }
 .card-group {
@@ -162,5 +121,16 @@ export default {
   width: 100%;
   max-width: 1500px;
   margin: auto;
+}
+.column {
+  margin-bottom: 2rem;
+}
+@media (max-width: 1025px) {
+  .portfolio {
+    padding: 1rem;
+  }
+  .column {
+    margin-bottom: 0;
+  }
 }
 </style>

@@ -18,7 +18,7 @@
     <div class="parallax parallax-one">
       <div class="parallax-gradient"></div>
       <div class="img-text">
-        <h3>I am a front-end web developer with a passion for technology, learning and creating.</h3>
+<!--        <h3>I am a front-end web developer with a passion for technology, learning and creating.</h3>-->
       </div>
     </div>
 
@@ -32,7 +32,7 @@
     <div class="parallax parallax-two">
       <div class="parallax-gradient"></div>
       <div class="img-text">
-        <h3>"I spend my days sipping coffee, writing code and bending to the will of my three furry felines."</h3>
+<!--        <h3>"I spend my days sipping coffee, writing code and bending to the will of my three furry felines."</h3>-->
       </div>
     </div>
 
@@ -46,7 +46,7 @@
     <div class="parallax parallax-three">
       <div class="parallax-gradient"></div>
       <div class="img-text">
-        <h3>"I love to learn and enjoy tackling new concepts."</h3>
+<!--        <h3>"I love to learn and enjoy tackling new concepts."</h3>-->
       </div>
     </div>
   </div>

@@ -29,7 +29,7 @@ export default {
           company: 'AD Creative Group',
           location: 'Billings, MT',
           dates: 'Mar 2020 - Current',
-          summary: 'In this role I leverage PHP, Javascript and Bootstrap to create custom Wordpress themes for our clients which are fully functional and responsive. I am also responsible for updating and maintaining a number of websites on a monthly basis.'
+          summary: 'In this role I leverage PHP, Javascript and Bootstrap to create custom Wordpress themes for our clients which are fully functional and responsive.'
         },
         {
           title: 'FRONT-END WEB DEVELOPER',
